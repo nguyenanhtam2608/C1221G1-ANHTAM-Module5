@@ -1,0 +1,8 @@
+
+
+<div>
+  <input  type="color" id="head" name="head"
+         value="#e66465" (change)="getColor($event.target.value)">
+  <label for="head">Color</label>
+</div>
+<h1 [ngStyle]="{color:color }">{{color}}</h1>
