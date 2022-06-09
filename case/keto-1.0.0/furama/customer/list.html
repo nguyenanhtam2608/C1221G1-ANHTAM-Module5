@@ -28,29 +28,6 @@
 <h1 style="text-align: center">List Customer </h1>
 
 
-<div style="text-align: center">
-    <a th:if="${list.hasPrevious()}"
-       th:href="@{/customer/(page=${list.number - 1},  sort=${sortBy},searchName=${searchName},searchEmail=${searchEmail},searchType=${searchType})}">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-             class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
-            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-        </svg>
-    </a>
-    <span th:text="${list.number + 1}"></span>
-    /
-    <span th:text="${list.totalPages}"></span>
-
-    <a th:if="${list.hasNext()}"
-       th:href="@{/customer/(page=${list.number + 1},  sort=${sortBy},searchName=${searchName},searchEmail=${searchEmail},searchType=${searchType})}">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-             class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-        </svg>
-    </a>
-
-</div>
-
-
 <!--<button style="float: right" type="submit">Delete</button>-->
 <table class="table container">
     <thead class="table-dark">
@@ -106,7 +83,7 @@
         <td>nat2682002@gmail.com</td>
         <td>Điện bàn </td>
         <td>
-            <a th:href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">
+            <a href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">
                 <button type="button" class="btn btn-warning">Edit</button>
             </a></td>
         <!--            <td><a th:href="@{/blog/{id}/showDelete(id=${customer.getId()})}">delete</a></td>-->
@@ -114,7 +91,7 @@
         <td>
 
             <button
-                    th:attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"
+                    attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"
                     type="button" class="btn btn-danger" data-toggle="modal"
                     data-target="#exampleModalCenter">
                 Delete
@@ -134,21 +111,20 @@
         <td>nat2682002@gmail.com</td>
         <td>Điện bàn </td>
         <td>
-            <a th:href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">
+
                 <button type="button" class="btn btn-warning">Edit</button>
-            </a></td>
+          </td>
         <!--            <td><a th:href="@{/blog/{id}/showDelete(id=${customer.getId()})}">delete</a></td>-->
 
         <td>
 
             <button
-                    th:attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"
+                    attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"
                     type="button" class="btn btn-danger" data-toggle="modal"
                     data-target="#exampleModalCenter">
                 Delete
             </button>
         </td>
-
 
     </tr>
     <tr>
@@ -163,7 +139,7 @@
         <td>nat2682002@gmail.com</td>
         <td>Điện bàn </td>
         <td>
-            <a th:href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">
+            <a href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">
                 <button type="button" class="btn btn-warning">Edit</button>
             </a></td>
         <!--            <td><a th:href="@{/blog/{id}/showDelete(id=${customer.getId()})}">delete</a></td>-->
@@ -171,7 +147,7 @@
         <td>
 
             <button
-                    th:attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"
+                    attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"
                     type="button" class="btn btn-danger" data-toggle="modal"
                     data-target="#exampleModalCenter">
                 Delete
@@ -192,7 +168,7 @@
         <td>nat2682002@gmail.com</td>
         <td>Điện bàn </td>
         <td>
-            <a th:href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">
+            <a href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">
                 <button type="button" class="btn btn-warning">Edit</button>
             </a></td>
         <!--            <td><a th:href="@{/blog/{id}/showDelete(id=${customer.getId()})}">delete</a></td>-->
@@ -200,7 +176,7 @@
         <td>
 
             <button
-                    th:attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"
+                    attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"
                     type="button" class="btn btn-danger" data-toggle="modal"
                     data-target="#exampleModalCenter">
                 Delete
@@ -211,7 +187,7 @@
     </tr>
     </tbody>
 </table>
-</form>
+</body>
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalCenterTitle"
      aria-hidden="true">
@@ -230,7 +206,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
                 </button>
-                <form method="post" th:action="@{/customer/delete}">
+                <form method="post" action="@{/customer/delete}">
                     <input type="hidden" name="idCustomer" id="id-del">
                     <button type="submit" class="btn btn-primary">Xác nhận xoá</button>
                 </form>
@@ -244,7 +220,7 @@
         document.getElementById("name").innerText = name;
     }
 </script>
-<div th:fragment="jsbs">
+<div fragment="jsbs">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
@@ -276,7 +252,7 @@
 </div>
 
 
-</script>
+</html>
 
 </body>
 <html>

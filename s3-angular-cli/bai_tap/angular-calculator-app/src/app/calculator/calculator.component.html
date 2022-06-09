@@ -1,73 +1,88 @@
 <h1>Calculator</h1>
 <table class="calculator">
 
+
   <tr>
-
-    <td colspan="3">
-      <input class="display-box" type="text" id="result" value="{{result}}"/> </td>
-
-    <!-- clearScreen() function clear all the values -->
-
-
+    <td><input class="display-box" type="number" id="n1" [(ngModel)]="n1"/></td>
+    <td>
+      <input class="display-box" type="number" id="n2" [(ngModel)]="n2"/>
+    </td>
   </tr>
 
   <tr>
-
-    <!-- display() function display the value of clicked button -->
-
-    <td><input class="button" type="button" value="1" (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="2" (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="3" (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="/" (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="C" (click)="remove()"/></td>
-
-  </tr>
-
-  <tr>
-
-    <td><input class="button" type="button" value="4" (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="5" (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="6" (click)="display($event.target.value)"/></td>
+    <td><input class="button" type="button" value="+" (click)="display($event.target.value)"/></td>
 
     <td><input class="button" type="button" value="-" (click)="display($event.target.value)"/></td>
 
-  </tr>
-
-  <tr>
-
-    <td><input class="button" type="button" value="7" (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="8" (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="9" (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="+" (click)="display($event.target.value)"/></td>
-
-  </tr>
-
-  <tr>
-
-    <td><input class="button" type="button" value="." (click)="display($event.target.value)"/></td>
-
-    <td><input class="button" type="button" value="0" (click)="display($event.target.value)"/></td>
-
-    <!-- calculate() function evaluate the mathematical expression -->
-
-    <td><input class="button" type="button" value="=" (click)="calculate($event.target.value)" style="background-color: #fb0066;"/></td>
-
     <td><input class="button" type="button" value="*" (click)="display($event.target.value)"/></td>
-    <td><input class="button" type="button" value="AC" (click)="removeAll()"/></td>
 
+    <td><input class="button" type="button" value="/" (click)="display($event.target.value)"/></td>
+  </tr>
+
+  <tr>
 
   </tr>
 
+  <input class="display-box" type="text" id="result2" value="{{result}}" disabled/>
 
+  <!-- clearScreen() function clear all the values -->
+
+
+  <!--  <tr>-->
+
+  <!--    &lt;!&ndash; display() function display the value of clicked button &ndash;&gt;-->
+
+  <!--    <td><input class="button" type="button" value="1" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="2" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="3" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="/" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="C" (click)="remove()"/></td>-->
+
+  <!--  </tr>-->
+
+  <!--  <tr>-->
+
+  <!--    <td><input class="button" type="button" value="4" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="5" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="6" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="-" (click)="display($event.target.value)"/></td>-->
+
+  <!--  </tr>-->
+
+  <!--  <tr>-->
+
+  <!--    <td><input class="button" type="button" value="7" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="8" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="9" (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="+" (click)="display($event.target.value)"/></td>-->
+
+  <!--  </tr>-->
+
+  <!--  <tr>-->
+
+  <!--    <td><input class="button" type="button" value="." (click)="display($event.target.value)"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="0" (click)="display($event.target.value)"/></td>-->
+
+  <!--    &lt;!&ndash; calculate() function evaluate the mathematical expression &ndash;&gt;-->
+
+  <!--    <td><input class="button" type="button" value="=" (click)="calculate($event.target.value)" style="background-color: #fb0066;"/></td>-->
+
+  <!--    <td><input class="button" type="button" value="*" (click)="display($event.target.value)"/></td>-->
+  <!--    <td><input class="button" type="button" value="AC" (click)="removeAll()"/></td>-->
+
+
+  <!--  </tr>-->
 </table>
 
 

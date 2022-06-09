@@ -7,7 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
 
-  public result: string = '';
+  public result: number = 0;
+  public n1: number;
+  public n2: number;
 
   constructor() {
   }
@@ -45,27 +47,51 @@ export class CalculatorComponent implements OnInit {
   //   const result = str.substring(0, str.length - 1);
   //   (document.getElementById('result') as HTMLInputElement).value = result;
   // }
+  //
+  // ts
+  // display(value: string) {
+  //  this.result += value;
+  // }
+  //
+  // remove() {
+  //   this.result = this.result.substring(0, this.result.length - 1);
+  // }
+  //
+  // removeAll() {
+  //   this.result = '';
+  //   // tslint:disable-next-line:no-conditional-assignment
+  //
+  // }
+  //
+  // calculate(value: string) {
+  //   // tslint:disable-next-line:no-eval
+  //   const rs = this.result = eval(this.result);
+  //   // tslint:disable-next-line:no-conditional-assignment use-isnan triple-equals
+  //   if (rs == Infinity) {
+  //     this.result = 'không chia được cho số 0';
+  //
+  //   }
+  // }
+
+
   display(value: string) {
-   this.result += value;
-  }
-
-  remove() {
-    this.result = this.result.substring(0, this.result.length - 1);
-  }
-
-  removeAll() {
-    this.result = '';
-    // tslint:disable-next-line:no-conditional-assignment
-
-  }
-
-  calculate(value: string) {
-    // tslint:disable-next-line:no-eval
-    const rs = this.result = eval(this.result);
-    // tslint:disable-next-line:no-conditional-assignment use-isnan triple-equals
-    if (rs == Infinity) {
-      this.result = 'không chia được cho số 0';
-
+    switch (value) {
+      case '+':
+        // tslint:disable-next-line:no-unused-expression radix
+        this.result = this.n1 + this.n2;
+        break;
+      case '-':
+        // tslint:disable-next-line:no-unused-expression radix
+        this.result = this.n1 - this.n2;
+        break;
+      case '*':
+        // tslint:disable-next-line:no-unused-expression radix
+        this.result = this.n1 * this.n2;
+        break;
+      case '/':
+        // tslint:disable-next-line:no-unused-expression radix
+        this.result = this.n1 / this.n2;
+        break;
     }
   }
 }

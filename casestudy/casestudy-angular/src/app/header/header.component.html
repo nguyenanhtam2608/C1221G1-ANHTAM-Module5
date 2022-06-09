@@ -24,13 +24,19 @@
             <div class="collapse navbar-collapse" id="navbarsExample04">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="index.html">Customer</a>
+                  <a [routerLink]="['/customer-list']">List customer</a>
+                  <a [routerLink]="['/customer-create']">Create customer</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="index.html">Service</a>
+                  <a [routerLink]="['/service-list']">List service</a>
+                  <a [routerLink]="['/service-create']">Create service</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="room.html">Our room</a>
+                  <a class="nav-link" href="index.html">Contract</a>
+                  <a [routerLink]="['/contract-list']">List Contract</a>
+                  <a [routerLink]="['/contract-create']">Create Contract </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="gallery.html">Gallery</a>
