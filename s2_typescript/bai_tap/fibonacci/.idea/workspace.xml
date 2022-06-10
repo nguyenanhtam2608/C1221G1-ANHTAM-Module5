@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40a0b313-9eda-4fd6-b166-e788162d47db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../case/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/contract/contract-create/contract-create.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/contract/contract-create/contract-create.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/contract/contract-create/contract-create.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/contract/contract-create/contract-create.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/contract/contract-list/contract-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/contract/contract-list/contract-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/contract/contract-list/contract-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/contract/contract-list/contract-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/service/service-list/service-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/service/service-list/service-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/service/service-list/service-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/service/service-list/service-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../s4_component-amp/thuc_hanh/angular-hackernews-app/src/app/article.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../s4_component-amp/thuc_hanh/angular-hackernews-app/src/app/article/article.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../s4_component-amp/thuc_hanh/angular-hackernews-app/src/app/article/article.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../s4_component-amp/thuc_hanh/angular-hackernews-app/src/app/article/article.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../s4_component-amp/thuc_hanh/angular-hackernews-app/src/app/article/article.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case/keto-1.0.0/furama/contract/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/keto-1.0.0/furama/contract/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case/keto-1.0.0/furama/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/keto-1.0.0/furama/customer/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case/keto-1.0.0/furama/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/keto-1.0.0/furama/room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case/keto-1.0.0/furama/script.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/keto-1.0.0/furama/script.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/casestudy-angular/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../s3-angular-cli/bai_tap/angular-calculator-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../s3-angular-cli/bai_tap/angular-calculator-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../s3-angular-cli/bai_tap/angular-calculator-app/src/app/calculator/calculator.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../s3-angular-cli/bai_tap/angular-calculator-app/src/app/calculator/calculator.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../s3-angular-cli/bai_tap/angular-calculator-app/src/app/calculator/calculator.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../s3-angular-cli/bai_tap/angular-calculator-app/src/app/calculator/calculator.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../casestudy/casestudy-angular" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../s5_interaction/thuc_hanh/angular-name-card" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -102,7 +69,8 @@
       <workItem from="1654703638237" duration="285000" />
       <workItem from="1654736520307" duration="179000" />
       <workItem from="1654741088912" duration="356000" />
-      <workItem from="1654768007697" duration="243000" />
+      <workItem from="1654768007697" duration="817000" />
+      <workItem from="1654785944233" duration="50000" />
     </task>
     <servers />
   </component>
@@ -121,10 +89,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="545" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1654654762952" />
-    <state x="548" y="150" key="FileChooserDialogImpl" timestamp="1654670392336">
+    <state x="548" y="150" key="FileChooserDialogImpl" timestamp="1654785998843">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="548" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1654670392336" />
+    <state x="548" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1654785998843" />
     <state width="1515" height="208" key="GridCell.Tab.0.bottom" timestamp="1654230507253">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
