@@ -18,76 +18,27 @@
           <th>#</th>
           <th>Name <i class="fa fa-sort"></i></th>
           <th>Address</th>
-          <th>City <i class="fa fa-sort"></i></th>
+          <th>Email <i class="fa fa-sort"></i></th>
           <th>Id Card</th>
-          <th>Country <i class="fa fa-sort"></i></th>
+          <th>Gender <i class="fa fa-sort"></i></th>
           <th>Actions</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>1</td>
-          <td>Thomas Hardy</td>
-          <td>89 Chiaroscuro Rd.</td>
-          <td>Portland</td>
-          <td>206405031</td>
-          <td>USA</td>
+
+        <tr *ngFor=" let customer of customer">
+          <td>{{customer.id}}</td>
+          <td>{{customer.name}}</td>
+          <td>{{customer.address}}</td>
+          <td>{{customer.mail}}</td>
+          <td>{{customer.nationalId}}</td>
+          <td>{{customer.gender}}</td>
           <td>
             <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
             <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Maria Anders</td>
-          <td>Obere Str. 57</td>
-          <td>Berlin</td>
-          <td>2064050123</td>
-          <td>Germany</td>
-          <td>
-            <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-          </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Fran Wilson</td>
-          <td>C/ Araquil, 67</td>
-          <td>Madrid</td>
-          <td>206405031</td>
-          <td>Spain</td>
-          <td>
-            <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-          </td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Dominique Perrier</td>
-          <td>25, rue Lauriston</td>
-          <td>Paris</td>
-          <td>206405031</td>
-          <td>France</td>
-          <td>
-            <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-          </td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Martin Blank</td>
-          <td>Via Monte Bianco 34</td>
-          <td>Turin</td>
-          <td>206405031</td>
-          <td>Italy</td>
-          <td>
-            <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+            <button class="btn btn-danger btn-sm btn" data-toggle="modal" data-target="#exampleModal"
+                    data-placement="top"
+                    title="Delete" [routerLink]="['/modal']"><i class="material-icons">&#xE872;</i></button>
           </td>
         </tr>
         </tbody>
@@ -108,7 +59,7 @@
   </div>
 </div>
 <script>
-  $(document).ready(function(){
+  $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
 </script>

@@ -6,8 +6,8 @@
 	  Support:
 	  Description:
 	  Version:
-	  
-------------------------------------------------- 
+
+-------------------------------------------------
 */
 /* CSS Index
 -------------------------------------------------
@@ -22,15 +22,16 @@
 	8. video-area
 	9. counter
 	10. footer
-	
+
 -------------------------------------------------
 */
 /*
- 
+
 	@include transition(.4s);
 	color:$theme-color;
-	
+
 */
+
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Noto+Serif:400,400i,700&display=swap");
 .boxed-btn {
   background: #fff;
@@ -55,6 +56,7 @@
     outline: none; }
   .boxed-btn.large-width {
     width: 220px; }
+
 
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
@@ -3599,10 +3601,10 @@ label {
 
 /*============ End Blog Single Styles  =============*/
 /*
- 
+
 	@include transition(.4s);
 	color:$theme-color;
-	
+
 */
 .boxed-btn {
   background: #fff;

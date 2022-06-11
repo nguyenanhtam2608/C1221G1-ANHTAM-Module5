@@ -9,6 +9,7 @@ import {FacilityListComponent} from './facility/facility-list/facility-list.comp
 import {FacilityCreateComponent} from './facility/facility-create/facility-create.component';
 import {FacilityEditComponent} from './facility/facility-edit/facility-edit.component';
 import {BodyComponent} from './body/body.component';
+import {ModalComponent} from './modal/modal.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: 'facility-create', component: FacilityCreateComponent},
   {path: 'facility-edit', component: FacilityEditComponent},
   {path: 'contract-create', component: ContractCreateComponent},
-  {path: 'contract-list', component: ContractListComponent}
+  {path: 'contract-list', component: ContractListComponent},
+  {path: 'modal', component: ModalComponent}
 ];
 
 @NgModule({
