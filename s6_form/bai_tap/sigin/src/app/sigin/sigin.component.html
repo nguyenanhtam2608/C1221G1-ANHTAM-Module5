@@ -1,0 +1,37 @@
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2> Registration Form</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="input_field"><span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" formControlName="email" name="email" placeholder="Email"/>
+          </div>
+          <div *ngIf="!email.valid && (email.touched)">
+            <div [hidden]="!email.errors.required">
+              <p style="color: red">Email is required</p>
+            </div>
+            <div [hidden]="!email.errors.email">
+              <p style="color: red"> Invalid email id </p>
+            </div>
+          </div>
+          <div class="input_field"><span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" formControlName="pass" placeholder="Password"/>
+          </div>
+          <div *ngIf="!pass.valid && (pass.touched)">
+            <div [hidden]="!pass.errors.required">
+              <p style="color: red">Pass is required</p>
+            </div>
+            <div [hidden]="!pass.errors.minlength">
+              <p style="color: red">Pass min length 6 </p>
+            </div>
+          </div>
+          <input class="button" type="submit" [disabled]="!loginForm.valid" value="Register"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
