@@ -2,15 +2,26 @@
 <body class="p-3 mb-2 bg-secondary text-white">
 <h3 style="text-align: center">CREATE CONTRACT</h3>
 
-<form>
+<form [formGroup]="validateContract" (ngSubmit)="onSub()">
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Name</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+      <label for="inputEmail4">Id </label>
+      <input type="text" class="form-control" formControlName="id" id="inputEmail4" placeholder="id">
+      <p style="color: red"
+         *ngIf="validateContract.controls.id.hasError('required')  && validateContract.controls.id.touched">
+        Is
+        not empty</p>
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">Deposit</label>
-      <input type="text" class="form-control" id="inputPassword4" placeholder="deposit">
+      <input type="text" class="form-control" formControlName="deposit" id="inputPassword4" placeholder="deposit">
+      <p style="color: red"
+         *ngIf="validateContract.controls.deposit.hasError('required')  && validateContract.controls.deposit.touched">
+        Is
+        not empty</p>
+      <p style="color: red"
+         *ngIf="validateContract.controls.deposit.hasError('pattern')  && validateContract.controls.deposit.touched">
+        Format là số dương</p>
     </div>
   </div>
   <div class="form-row">

@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Contract} from '../../model/contract';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-contract-list',
@@ -11,7 +12,7 @@ export class ContractListComponent implements OnInit {
 
   constructor() {
     // @ts-ignore
-    this.contract.push(   {
+    this.contract.push({
       id: 1,
       startDate: '2020-12-08',
       endDate: '2020-12-08',
@@ -38,7 +39,7 @@ export class ContractListComponent implements OnInit {
       },
       serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
     });
-    this.contract.push(   {
+    this.contract.push({
       id: 1,
       startDate: '2020-12-08',
       endDate: '2020-12-08',
@@ -65,7 +66,7 @@ export class ContractListComponent implements OnInit {
       },
       serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
     });
-    this.contract.push(   {
+    this.contract.push({
       id: 1,
       startDate: '2020-12-08',
       endDate: '2020-12-08',
@@ -92,7 +93,7 @@ export class ContractListComponent implements OnInit {
       },
       serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
     });
-    this.contract.push(   {
+    this.contract.push({
       id: 1,
       startDate: '2020-12-08',
       endDate: '2020-12-08',
@@ -119,7 +120,7 @@ export class ContractListComponent implements OnInit {
       },
       serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
     });
-    this.contract.push(   {
+    this.contract.push({
       id: 1,
       startDate: '2020-12-08',
       endDate: '2020-12-08',
@@ -146,7 +147,7 @@ export class ContractListComponent implements OnInit {
       },
       serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
     });
-    this.contract.push(   {
+    this.contract.push({
       id: 1,
       startDate: '2020-12-08',
       endDate: '2020-12-08',
@@ -175,6 +176,8 @@ export class ContractListComponent implements OnInit {
     });
 
   }
+
+
 
   ngOnInit() {
   }

@@ -5,54 +5,97 @@
       <div class="row">
         <div class="booking-form">
           <div class="form-header">
-            <h1>Update</h1>
+            <h1>Create</h1>
           </div>
-          <form>
+          <form [formGroup]="facilityForm"  (ngSubmit)="onSub()">
 
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
                   <span class="form-label">Name</span>
-                  <input class="form-control" type="text" placeholder="Enter your name">
+                  <input class="form-control" type="text" formControlName="name" placeholder="Enter your name">
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.name.hasError('required')  && facilityForm.controls.name.touched">Is
+                    not empty</p>
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.name.hasError('pattern')  && facilityForm.controls.name.touched">Is not number</p>
                 </div>
               </div>
 
               <div class="col-sm-6">
                 <div class="form-group">
-                  <span class="form-label">Area</span>
-                  <input class="form-control" type="number" placeholder="Enter your Area">
+                  <span class="form-label">Id </span>
+                  <input class="form-control" type="text" formControlName="id" placeholder="Enter your Id">
                 </div>
+                <p style="color: red"
+                   *ngIf="facilityForm.controls.id.hasError('required')  && facilityForm.controls.id.touched">Is
+                  not empty</p>
+                <p style="color: red"
+                   *ngIf="facilityForm.controls.id.hasError('pattern')  && facilityForm.controls.id.touched">Format DV-XXXX </p>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
                   <span class="form-label">Cost</span>
-                  <input class="form-control" type="number" placeholder="Enter your phone Cost">
+                  <input class="form-control" type="number" formControlName="rentalFee" placeholder="Enter your phone Cost">
                 </div>
+                <p style="color: red"
+                   *ngIf="facilityForm.controls.rentalFee.hasError('required')  && facilityForm.controls.rentalFee.touched">Is
+                  not empty</p>
+                <p style="color: red"
+                   *ngIf="facilityForm.controls.rentalFee.hasError('pattern')  && facilityForm.controls.rentalFee.touched">Phải là số dương </p>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <span class="form-label">Standard Room</span>
-                  <input class="form-control" type="text" placeholder="Enter Standard Room">
+                  <input class="form-control" type="text" formControlName="roomStandard" placeholder="Enter Standard Room">
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.roomStandard.hasError('required')  && facilityForm.controls.rentalFee.touched">Is
+                    not empty</p>
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <span class="form-label">Description Other Convenience</span>
-              <input class="form-control" type="text" placeholder="Enter Description Other Convenience">
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Description Other Convenience</span>
+                  <input class="form-control" type="text" formControlName="description" placeholder="Enter your Description Other Convenience">
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.description.hasError('required')  && facilityForm.controls.rentalFee.touched">Is
+                    not empty</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Area</span>
+                  <input class="form-control" type="text" formControlName="area" placeholder="Enter Area">
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.area.hasError('required')  && facilityForm.controls.rentalFee.touched">Is
+                    not empty</p>
+                </div>
+              </div>
             </div>
+
+
             <div class="form-group">
-              <span class="form-label">Pool Area</span>
-              <input class="form-control" type="text" placeholder="Enter Pool Area">
+              <span class="form-label">Max people</span>
+              <input class="form-control" type="text" formControlName="maximumPeople" placeholder="Enter maximum People">
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.maximumPeople.hasError('required')  && facilityForm.controls.maximumPeople.touched">Is
+                not empty</p>
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.maximumPeople.hasError('pattern')  && facilityForm.controls.maximumPeople.touched">Phải là số dương </p>
+
             </div>
             <div class="form-group">
               <span class="form-label">Number Of Floors</span>
-              <input class="form-control" type="text" placeholder="Enter Number Of Floors">
+              <input class="form-control" type="text" formControlName="numberFloor" placeholder="Enter Number Of Floors">
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.numberFloor.hasError('required')  && facilityForm.controls.numberFloor.touched">Is
+                not empty</p>
             </div>
-
-
-
 
             <div class="row">
               <div class="col-sm-6">
