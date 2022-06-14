@@ -78,7 +78,8 @@
               </div>
             </div>
 
-
+            <div class="row">
+              <div class="col-sm-6">
             <div class="form-group">
               <span class="form-label">Max people</span>
               <input class="form-control" type="text" formControlName="maximumPeople" placeholder="Enter maximum People">
@@ -87,7 +88,19 @@
                 not empty</p>
               <p style="color: red"
                  *ngIf="facilityForm.controls.maximumPeople.hasError('pattern')  && facilityForm.controls.maximumPeople.touched">Phải là số dương </p>
+            </div>
 
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Link img</span>
+                  <input class="form-control" type="text" formControlName="image" placeholder="Enter image">
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.image.hasError('required')  && facilityForm.controls.image.touched">Is
+                    not empty,if is not link then paste default image house </p>
+                </div>
+
+              </div>
             </div>
             <div class="form-group">
               <span class="form-label">Number Of Floors</span>

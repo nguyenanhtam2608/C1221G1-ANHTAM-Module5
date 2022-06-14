@@ -1,19 +1,17 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {CustomerService} from '../../service/customer/customer.service';
-import {ActivatedRoute, ParamMap} from '@angular/router';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 
 @Component({
-  selector: 'app-customer-edit',
-  templateUrl: './customer-edit.component.html',
-  styleUrls: ['./customer-edit.component.css']
+  selector: 'app-delete-customer',
+  templateUrl: './delete-customer.component.html',
+  styleUrls: ['./delete-customer.component.css']
 })
-export class CustomerEditComponent implements OnInit {
+export class DeleteCustomerComponent implements OnInit {
   id: number;
   customerUpdate: FormGroup;
-
-
-  constructor(private customerService: CustomerService, private activatedRoute: ActivatedRoute) {
+  constructor(private customerService: CustomerService, private activatedRoute: ActivatedRoute, private router: Router) {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = +paramMap.get('id');
       const customer = this.getCustomer(this.id);
@@ -32,19 +30,15 @@ export class CustomerEditComponent implements OnInit {
     });
   }
 
-
   getCustomer(id: number) {
     return this.customerService.findById(id);
   }
 
-  onSubmit(id: number) {
-    const customer = this.customerUpdate.value;
-    this.customerService.updateCustomer(id, customer);
-    alert('Cập nhật thành công');
+  ngOnInit() {
   }
 
-  ngOnInit(): void {
+  deleteCustomer(id: number) {
+    this.customerService.deleteCustomer(id);
+    this.router.navigate(['/customer/list']);
   }
-
-
 }

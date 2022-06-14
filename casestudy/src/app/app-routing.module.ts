@@ -10,19 +10,21 @@ import {FacilityCreateComponent} from './facility/facility-create/facility-creat
 import {FacilityEditComponent} from './facility/facility-edit/facility-edit.component';
 import {BodyComponent} from './body/body.component';
 import {ModalComponent} from './modal/modal.component';
+import {DeleteCustomerComponent} from './modal/delete-customer/delete-customer.component';
 
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
   {path: 'customer-list', component: CustomerListComponent},
   {path: 'customer-create', component: CustomerCreateComponent},
-  {path: 'customer-edit', component: CustomerEditComponent},
+  {path: 'customer-edit/:id', component: CustomerEditComponent},
   {path: 'facility-list', component: FacilityListComponent},
   {path: 'facility-create', component: FacilityCreateComponent},
-  {path: 'facility-edit', component: FacilityEditComponent},
+  {path: 'facility-edit/:id', component: FacilityEditComponent},
   {path: 'contract-create', component: ContractCreateComponent},
   {path: 'contract-list', component: ContractListComponent},
-  {path: 'modal', component: ModalComponent}
+  {path: 'delete-customer/:id', component: DeleteCustomerComponent},
+  {path: 'modal', component: ModalComponent},
 ];
 
 @NgModule({

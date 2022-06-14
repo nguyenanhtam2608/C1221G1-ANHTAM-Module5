@@ -1,6 +1,7 @@
 import {Component, NgModule, OnInit} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
+import {CustomerService} from '../../service/customer/customer.service';
 
 @Component({
   selector: 'app-customer-create',
@@ -21,11 +22,13 @@ export class CustomerCreateComponent implements OnInit {
     salary: new FormControl('', [Validators.required]),
   });
 
-  constructor() {
+  constructor(private customerService: CustomerService) {
   }
 
   onSubmit() {
-    alert('thanh cong');
+    const cusotmer = this.customerCreate.value;
+    this.customerService.saveCustomer(cusotmer);
+    this.customerCreate.reset();
   }
 
   ngOnInit(): void {

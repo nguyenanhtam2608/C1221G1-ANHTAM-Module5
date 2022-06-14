@@ -11,7 +11,6 @@
     <th scope="col">End Date</th>
     <th scope="col">Deposit</th>
     <th scope="col">Total Money</th>
-    <th>Edit</th>
     <th>Delete</th>
   </tr>
 
@@ -27,10 +26,6 @@
     <td>{{contract.deposit}}</td>
     <td>{{contract.total}}</td>
 
-    <td>
-      <a>
-        <button type="button" class="btn btn-warning">Edit</button>
-      </a></td>
     <!--            <td><a th:href="@{/blog/{id}/showDelete(id=${customer.getId()})}">delete</a></td>-->
     <td>
       <button
@@ -41,132 +36,9 @@
     </td>
 
   </tr>
-  <!--  <tr>-->
-  <!--    <td>1</td>-->
-  <!--    <td>Nguyen Van Tâm</td>-->
-  <!--    <td>Le Thanh Đạt</td>-->
-  <!--    <td>Ocean Studio</td>-->
-  <!--    <td>01-01-2022</td>-->
-  <!--    <td>05-01-2022</td>-->
-  <!--    <td>9000000</td>-->
-  <!--    <td>15000000</td>-->
-  <!--    <td>-->
-  <!--      <a href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">-->
-  <!--        <button type="button" class="btn btn-warning">Edit</button>-->
-  <!--      </a></td>-->
-  <!--    &lt;!&ndash;            <td><a th:href="@{/blog/{id}/showDelete(id=${customer.getId()})}">delete</a></td>&ndash;&gt;-->
-  <!--    <td>-->
-  <!--      <button-->
-  <!--        attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"-->
-  <!--        type="button" class="btn btn-danger" data-toggle="modal"-->
-  <!--        data-target="#exampleModalCenter">-->
-  <!--        Delete-->
-  <!--      </button>-->
-  <!--    </td>-->
 
-
-  <!--  </tr>-->
-  <!--  <tr>-->
-  <!--    <td>1</td>-->
-  <!--    <td>Nguyen Van Tâm</td>-->
-  <!--    <td>Le Thanh Đạt</td>-->
-  <!--    <td>Ocean Studio</td>-->
-  <!--    <td>01-01-2022</td>-->
-  <!--    <td>05-01-2022</td>-->
-  <!--    <td>9000000</td>-->
-  <!--    <td>15000000</td>-->
-  <!--    <td>-->
-  <!--      <a href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">-->
-  <!--        <button type="button" class="btn btn-warning">Edit</button>-->
-  <!--      </a></td>-->
-  <!--    &lt;!&ndash;            <td><a th:href="@{/blog/{id}/showDelete(id=${customer.getId()})}">delete</a></td>&ndash;&gt;-->
-  <!--    <td>-->
-  <!--      <button-->
-  <!--        attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"-->
-  <!--        type="button" class="btn btn-danger" data-toggle="modal"-->
-  <!--        data-target="#exampleModalCenter">-->
-  <!--        Delete-->
-  <!--      </button>-->
-  <!--    </td>-->
-
-
-  <!--  </tr>-->
-  <!--  <tr>-->
-  <!--    <td>1</td>-->
-  <!--    <td>Nguyen Van Tâm</td>-->
-  <!--    <td>Le Thanh Đạt</td>-->
-  <!--    <td>Ocean Studio</td>-->
-  <!--    <td>01-01-2022</td>-->
-  <!--    <td>05-01-2022</td>-->
-  <!--    <td>9000000</td>-->
-  <!--    <td>15000000</td>-->
-  <!--    <td>-->
-  <!--      <a href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">-->
-  <!--        <button type="button" class="btn btn-warning">Edit</button>-->
-  <!--      </a></td>-->
-  <!--    &lt;!&ndash;            <td><a th:href="@{/blog/{id}/showDelete(id=${customer.getId()})}">delete</a></td>&ndash;&gt;-->
-  <!--    <td>-->
-  <!--      <button-->
-  <!--        attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"-->
-  <!--        type="button" class="btn btn-danger" data-toggle="modal"-->
-  <!--        data-target="#exampleModalCenter">-->
-  <!--        Delete-->
-  <!--      </button>-->
-  <!--    </td>-->
-
-
-  <!--  </tr>-->
-  <!--  <tr>-->
-  <!--    <td>1</td>-->
-  <!--    <td>Nguyen Van Tâm</td>-->
-  <!--    <td>Le Thanh Đạt</td>-->
-  <!--    <td>Ocean Studio</td>-->
-  <!--    <td>01-01-2022</td>-->
-  <!--    <td>05-01-2022</td>-->
-  <!--    <td>9000000</td>-->
-  <!--    <td>15000000</td>-->
-  <!--    <td>-->
-  <!--      <a href="@{/customer/{id}/showEdit(id=${customer.getIdCustomer()})}">-->
-  <!--        <button type="button" class="btn btn-warning">Edit</button>-->
-  <!--      </a></td>-->
-  <!--    &lt;!&ndash;            <td><a th:href="@{/blog/{id}/showDelete(id=${customer.getId()})}">delete</a></td>&ndash;&gt;-->
-  <!--    <td>-->
-  <!--      <button-->
-  <!--        attr="onclick=|deleteModal('${customer.idCustomer}','${customer.nameCustomer}')|"-->
-  <!--        type="button" class="btn btn-danger" data-toggle="modal"-->
-  <!--        data-target="#exampleModalCenter">-->
-  <!--        Delete-->
-  <!--      </button>-->
-  <!--    </td>-->
-
-
-  <!--  </tr>-->
+  <
   </tbody>
 </table>
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalCenterTitle"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Delete Customer</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Bạn có muốn xoá không
-        <span>Tên: <p id="name"></p></span>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
-        </button>
-        <form method="post" action="@{/customer/delete}">
-          <input type="hidden" name="idCustomer" id="id-del">
-          <button type="submit" class="btn btn-primary">Xác nhận xoá</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+

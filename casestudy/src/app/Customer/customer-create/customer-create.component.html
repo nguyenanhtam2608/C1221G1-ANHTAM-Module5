@@ -88,7 +88,7 @@
 
             <div class="form-group">
               <span class="form-label">Phone</span>
-              <input class="form-control" type="number" formControlName="phone" placeholder="Enter phone">
+              <input class="form-control" type="text" formControlName="phone" placeholder="Enter phone">
             </div>
             <p style="color: red"
                *ngIf="customerCreate.controls.phone.hasError('required')  && customerCreate.controls.phone.touched">
@@ -115,8 +115,9 @@
                 <div class="form-group">
                   <span class="form-label">Sex</span>
                   <select class="form-control">
-                    <option value="1">Nam</option>
-                    <option value="2">Nữ</option>
+
+                    <option formControlName="gender" value="1">Nam</option>
+                    <option formControlName="gender" value="2">Nữ</option>
                   </select>
                   <span class="select-arrow"></span>
                 </div>
@@ -126,21 +127,18 @@
                   <span class="form-label">Customer Type</span>
                   <select class="form-control">
 
-                    <option value="1">Diamond</option>
-                    <option value="2">Platinum</option>
-                    <option value="3">Gold</option>
-                    <option value="4">Silver</option>
+                    <option formControlName="customerType" value="1">Diamond</option>
+                    <option formControlName="customerType" value="2">Platinum</option>
+                    <option formControlName="customerType" value="3">Gold</option>
+                    <option formControlName="customerType" value="4">Silver</option>
                   </select>
                   <span class="select-arrow"></span>
                 </div>
               </div>
             </div>
 
-
             <div class="form-btn">
-              <button type="submit" [disabled]="!customerCreate.valid" class="submit-btn">Create</button>
-
-
+              <button type="submit" [disabled]="customerCreate.valid" class="submit-btn">Create</button>
             </div>
           </form>
 

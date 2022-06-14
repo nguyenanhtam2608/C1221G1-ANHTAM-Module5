@@ -25,21 +25,22 @@
         </tr>
         </thead>
         <tbody>
-
         <tr *ngFor=" let customer of customer">
           <td>{{customer.id}}</td>
           <td>{{customer.name}}</td>
           <td>{{customer.address}}</td>
           <td>{{customer.mail}}</td>
           <td>{{customer.nationalId}}</td>
-          <td>{{customer.gender}}</td>
+          <td *ngIf="customer.gender== 1"> Nam</td>
+          <td *ngIf="customer.gender== 0"> Nữ</td>
           <td>
             <a  class="view" title="View" data-toggle="tooltip"><i
               class="material-icons">&#xE417;</i></a>
-            <a  [routerLink]="['/customer-edit']"class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-            <button class="btn btn-danger btn-sm btn" data-toggle="modal" data-target="#exampleModal"
-                    data-placement="top"
-                    title="Delete" [routerLink]="['/modal']"><i class="material-icons">&#xE872;</i></button>
+            <a  [routerLink]="['/customer-edit',customer.id]" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+
+            <button type="button" class="btn btn-danger btn-sm" [routerLink]="['/delete-customer',customer.id]"  data-toggle="modal" data-target="#exampleModal">
+              <i class="material-icons">&#xE872;</i>
+            </button>
           </td>
         </tr>
         </tbody>
@@ -59,8 +60,4 @@
     </div>
   </div>
 </div>
-<script>
-  $(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-</script>
+

@@ -6,7 +6,7 @@
           <div class="form-header">
             <h1>Update</h1>
           </div>
-          <form [formGroup]="customerUpdate" (ngSubmit)="onSubmit()">
+          <form [formGroup]="customerUpdate" (ngSubmit)="onSubmit(id)">
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
@@ -60,17 +60,17 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <span class="form-label">Salary</span>
-                  <input class="form-control" type="text" formControlName="salary" placeholder="Enter your salary day">
-                </div>
-                <p style="color: red"
-                   *ngIf="customerUpdate.controls.salary.hasError('required')  && customerUpdate.controls.salary.touched">
-                  Is
-                  not empty</p>
-              </div>
-              <div class="col-sm-6">
+<!--              <div class="col-sm-6">-->
+<!--                <div class="form-group">-->
+<!--                  <span class="form-label">Salary</span>-->
+<!--                  <input class="form-control" type="text" formControlName="salary" placeholder="Enter your salary day">-->
+<!--                </div>-->
+<!--                <p style="color: red"-->
+<!--                   *ngIf="customerUpdate.controls.salary.hasError('required')  && customerUpdate.controls.salary.touched">-->
+<!--                  Is-->
+<!--                  not empty</p>-->
+<!--              </div>-->
+              <div class="col-sm-12">
                 <div class="form-group">
                   <span class="form-label">Id card</span>
                   <input class="form-control" type="text" formControlName="nationalId" placeholder="Enter id card">
@@ -115,8 +115,8 @@
                 <div class="form-group">
                   <span class="form-label">Sex</span>
                   <select class="form-control">
-                    <option value="1">Nam</option>
-                    <option value="2">Nữ</option>
+                    <option formControlName="gender" value="1">Nam</option>
+                    <option formControlName="gender" value="2">Nữ</option>
                   </select>
                   <span class="select-arrow"></span>
                 </div>
@@ -126,10 +126,10 @@
                   <span class="form-label">Customer Type</span>
                   <select class="form-control">
 
-                    <option value="1">Diamond</option>
-                    <option value="2">Platinum</option>
-                    <option value="3">Gold</option>
-                    <option value="4">Silver</option>
+                    <option formControlName="customerType" value="1">Diamond</option>
+                    <option formControlName="customerType" value="2">Platinum</option>
+                    <option formControlName="customerType" value="3">Gold</option>
+                    <option formControlName="customerType" value="4">Silver</option>
                   </select>
                   <span class="select-arrow"></span>
                 </div>
@@ -138,7 +138,7 @@
 
 
             <div class="form-btn">
-              <button type="submit" [disabled]="!customerUpdate.valid" class="submit-btn">Create</button>
+              <button type="submit" [disabled]="customerUpdate.valid" class="submit-btn">Create</button>
 
 
             </div>

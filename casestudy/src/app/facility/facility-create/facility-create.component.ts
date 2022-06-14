@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {FacilityService} from '../../service/facility/facility.service';
 
 @Component({
   selector: 'app-facility-create',
@@ -8,7 +9,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class FacilityCreateComponent implements OnInit {
 
-  constructor() {
+  constructor(private facilityService: FacilityService) {
   }
 
   facilityForm = new FormGroup({
@@ -16,7 +17,7 @@ export class FacilityCreateComponent implements OnInit {
     name: new FormControl('', [Validators.required, Validators.pattern('^([A-Z][a-z]*)+(\\s[A-Z][a-z]*)*$')]),
     area: new FormControl('', [Validators.required, Validators.pattern('^\\+*\\d+$')]),
     rentalFee: new FormControl('', [Validators.required, Validators.pattern('^\\+*\\d+$')]),
-    image: new FormControl('', [Validators.required]),
+    image: new FormControl('https://gocyeube.com/wp-content/uploads/2022/05/hinh-anh-hacker-7-mau-min-450x800.jpg', [Validators.required]),
     maximumPeople: new FormControl('', [Validators.required, Validators.pattern('^\\+*\\d+$')]),
     roomStandard: new FormControl('', [Validators.required]),
     rentType: new FormControl('', [Validators.required]),
@@ -30,7 +31,10 @@ export class FacilityCreateComponent implements OnInit {
   ngOnInit() {
   }
 
+
   onSub() {
-    alert('Thành công');
+    const facility = this.facilityForm.value;
+    this.facilityService.saveFacility(facility);
+    this.facilityForm.reset();
   }
 }
