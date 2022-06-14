@@ -11,12 +11,13 @@
       <div class="modal-body">
         <form [formGroup]="customerUpdate" (ngSubmit)="deleteCustomer(id)">
           <p>Bạn có muốn xóa Customer tên </p> <input formControlName="name" disabled>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-danger" value="Delete">
+          </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-        <input type="submit" class="btn btn-danger" value="Delete" >
-      </div>
+
     </div>
   </div>
 </div>

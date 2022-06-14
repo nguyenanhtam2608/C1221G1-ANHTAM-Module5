@@ -15,12 +15,13 @@ export class CustomerListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getAll();
+    this.getAll ();
   }
 
   getAll() {
     this.customer = this.customerService.getAll();
   }
+
 
 
 }

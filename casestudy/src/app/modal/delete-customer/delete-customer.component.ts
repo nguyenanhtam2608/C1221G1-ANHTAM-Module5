@@ -39,6 +39,6 @@ export class DeleteCustomerComponent implements OnInit {
 
   deleteCustomer(id: number) {
     this.customerService.deleteCustomer(id);
-    this.router.navigate(['/customer/list']);
+    this.router.navigate(['/customer-list']);
   }
 }

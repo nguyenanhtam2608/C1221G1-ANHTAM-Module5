@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Contract} from '../../model/contract';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {ContractService} from '../../service/contract/contract.service';
 
 @Component({
   selector: 'app-contract-list',
@@ -10,175 +11,13 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 export class ContractListComponent implements OnInit {
   contract: Contract[] = [];
 
-  constructor() {
-    // @ts-ignore
-    this.contract.push({
-      id: 1,
-      startDate: '2020-12-08',
-      endDate: '2020-12-08',
-      deposit: 2000,
-      total: 1000000,
-      customer: {
-        id: 1,
-        name: 'Nguyễn Thị Hào',
-        dayOfBirth: '1970-11-07',
-        gender: 0,
-        nationalId: '643431213',
-        phone: '0905423362',
-        mail: 'thihao07@gmail.com',
-        address: '23 Nguyễn Hoàng, Đà Nẵng',
-        customerType: {
-          id: 5,
-          name: 'Member'
-        }
-      },
-      facility: {
-        id: 3,
-        code: 'DV-0003',
-        name: 'Room Twin 01'
-      },
-      serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
-    });
-    this.contract.push({
-      id: 1,
-      startDate: '2020-12-08',
-      endDate: '2020-12-08',
-      deposit: 5550,
-      total: 1000000,
-      customer: {
-        id: 1,
-        name: 'Nguyễn Thị Hào',
-        dayOfBirth: '1970-11-07',
-        gender: 0,
-        nationalId: '643431213',
-        phone: '0905423362',
-        mail: 'thihao07@gmail.com',
-        address: '23 Nguyễn Hoàng, Đà Nẵng',
-        customerType: {
-          id: 5,
-          name: 'Member'
-        }
-      },
-      facility: {
-        id: 3,
-        code: 'DV-0003',
-        name: 'Room Twin 01'
-      },
-      serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
-    });
-    this.contract.push({
-      id: 1,
-      startDate: '2020-12-08',
-      endDate: '2020-12-08',
-      deposit: 66660,
-      total: 1000000,
-      customer: {
-        id: 1,
-        name: 'Nguyễn Thị Hào',
-        dayOfBirth: '1970-11-07',
-        gender: 0,
-        nationalId: '643431213',
-        phone: '0905423362',
-        mail: 'thihao07@gmail.com',
-        address: '23 Nguyễn Hoàng, Đà Nẵng',
-        customerType: {
-          id: 5,
-          name: 'Member'
-        }
-      },
-      facility: {
-        id: 3,
-        code: 'DV-0003',
-        name: 'Room Twin 01'
-      },
-      serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
-    });
-    this.contract.push({
-      id: 1,
-      startDate: '2020-12-08',
-      endDate: '2020-12-08',
-      deposit: 3424320,
-      total: 1000000,
-      customer: {
-        id: 1,
-        name: 'Nguyễn Thị Hào',
-        dayOfBirth: '1970-11-07',
-        gender: 0,
-        nationalId: '643431213',
-        phone: '0905423362',
-        mail: 'thihao07@gmail.com',
-        address: '23 Nguyễn Hoàng, Đà Nẵng',
-        customerType: {
-          id: 5,
-          name: 'Member'
-        }
-      },
-      facility: {
-        id: 3,
-        code: 'DV-0003',
-        name: 'Room Twin 01'
-      },
-      serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
-    });
-    this.contract.push({
-      id: 1,
-      startDate: '2020-12-08',
-      endDate: '2020-12-08',
-      deposit: 2342340,
-      total: 1000000,
-      customer: {
-        id: 1,
-        name: 'Nguyễn Thị Hào',
-        dayOfBirth: '1970-11-07',
-        gender: 0,
-        nationalId: '643431213',
-        phone: '0905423362',
-        mail: 'thihao07@gmail.com',
-        address: '23 Nguyễn Hoàng, Đà Nẵng',
-        customerType: {
-          id: 5,
-          name: 'Member'
-        }
-      },
-      facility: {
-        id: 3,
-        code: 'DV-0003',
-        name: 'Room Twin 01'
-      },
-      serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
-    });
-    this.contract.push({
-      id: 1,
-      startDate: '2020-12-08',
-      endDate: '2020-12-08',
-      deposit: 2343240,
-      total: 1000000,
-      customer: {
-        id: 1,
-        name: 'Nguyễn Thị Hào',
-        dayOfBirth: '1970-11-07',
-        gender: 0,
-        nationalId: '643431213',
-        phone: '0905423362',
-        mail: 'thihao07@gmail.com',
-        address: '23 Nguyễn Hoàng, Đà Nẵng',
-        customerType: {
-          id: 5,
-          name: 'Member'
-        }
-      },
-      facility: {
-        id: 3,
-        code: 'DV-0003',
-        name: 'Room Twin 01'
-      },
-      serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
-    });
-
+  constructor(private contractService: ContractService) {
   }
-
-
   ngOnInit() {
+    this.getAll();
+  }
+  getAll() {
+    this.contract = this.contractService.getAll();
   }
 
 }
