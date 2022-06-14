@@ -20,8 +20,8 @@ export class RegisterComponent implements OnInit {
       age: new FormControl('', [Validators.required, Validators.min(18)]),
       gender: new FormControl('', [Validators.requiredTrue]),
       // tslint:disable-next-line:max-line-length
-      phone: new FormControl('', [Validators.required, Validators.pattern('^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$')]),
-    }, [this.customPass]
+      phone: new FormControl('', [Validators.required, Validators.pattern( /^\+84\d{9,10}$/)]),
+    }, [this.passWordConfirm]
   );
 
   get email() {
@@ -70,7 +70,7 @@ export class RegisterComponent implements OnInit {
   }
 
 
-  customPass(confirm: AbstractControl) {
+  passWordConfirm(confirm: AbstractControl) {
     const pass1 = confirm.get('pass').value;
     const pass2 = confirm.get('pass2').value;
     // tslint:disable-next-line:triple-equals

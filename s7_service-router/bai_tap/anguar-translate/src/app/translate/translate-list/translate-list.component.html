@@ -1,0 +1,14 @@
+<h1>Danh sách Translate</h1>
+<table border="1px">
+  <tr>
+    <td>STT</td>
+    <td>Tên</td>
+    <td>Action</td>
+
+  </tr>
+  <tr *ngFor="let translate of translate; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{translate.dictionary}}</td>
+    <td><a [routerLink]="['/translate/detail',translate.id]">Detail</a></td>
+  </tr>
+</table>
