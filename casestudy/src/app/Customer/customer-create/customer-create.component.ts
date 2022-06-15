@@ -2,11 +2,13 @@ import {Component, NgModule, OnInit} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 import {CustomerService} from '../customer.service';
+import {Customer} from '../model/customer';
 
 @Component({
   selector: 'app-customer-create',
   templateUrl: './customer-create.component.html',
-  styleUrls: ['./customer-create.component.css']
+  styleUrls: ['./customer-create.component.css'],
+  providers: [CustomerService]
 })
 export class CustomerCreateComponent implements OnInit {
 
@@ -21,22 +23,27 @@ export class CustomerCreateComponent implements OnInit {
     address: new FormControl('', [Validators.required]),
     salary: new FormControl('', [Validators.required]),
   });
+  customer: Customer[] = [];
 
   constructor(private customerService: CustomerService) {
   }
 
+  //
+  // onSubmit() {
+  //   const cusotmer = this.customerCreate.value;
+  //   this.customerService.saveCustomer(cusotmer);
+  //   this.customerCreate.reset();
+  // }
   onSubmit() {
-    const cusotmer = this.customerCreate.value;
-    this.customerService.saveCustomer(cusotmer);
-    this.customerCreate.reset();
+    const customer = this.customerCreate.value;
+    this.customerService.saveCustomer(customer).subscribe(() => {
+      alert('Tạo thành công');
+      this.customerCreate.reset();
+    }, e => console.log(e));
   }
 
   ngOnInit(): void {
   }
 
 
-  deleteCustomer(id: any) {
-
-
-  }
 }

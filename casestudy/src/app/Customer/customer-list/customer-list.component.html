@@ -21,11 +21,12 @@
           <th>Email <i class="fa fa-sort"></i></th>
           <th>Id Card</th>
           <th>Gender <i class="fa fa-sort"></i></th>
+          <th>Customer type</th>
           <th>Actions</th>
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor=" let customer of customer">
+        <tr *ngFor=" let customer of customer1">
           <td>{{customer.id}}</td>
           <td>{{customer.name}}</td>
           <td>{{customer.address}}</td>
@@ -34,6 +35,7 @@
           <td *ngIf="customer.gender== 1"> Nam</td>
           <td *ngIf="customer.gender== 0"> Nữ</td>
           <td>
+          <td>{{customer.customerType.name}}</td>
             <a class="view" title="View" data-toggle="tooltip"><i
               class="material-icons">&#xE417;</i></a>
             <a [routerLink]="['/customer/edit',customer.id]" class="edit" title="Edit" data-toggle="tooltip"><i
