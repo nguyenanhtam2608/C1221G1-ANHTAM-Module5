@@ -1,5 +1,5 @@
-import {FacilityType} from './facility-type';
-import {RentType} from './rent-type';
+import {FacilityType} from '../../facility/model/facility-type';
+import {RentType} from '../../facility/model/rent-type';
 
 
 
