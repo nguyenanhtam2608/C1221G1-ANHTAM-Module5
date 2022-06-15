@@ -1,7 +1,7 @@
 import {Component, NgModule, OnInit} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
-import {CustomerService} from '../../service/customer/customer.service';
+import {CustomerService} from '../customer.service';
 
 @Component({
   selector: 'app-customer-create',
@@ -35,4 +35,8 @@ export class CustomerCreateComponent implements OnInit {
   }
 
 
+  deleteCustomer(id: any) {
+
+
+  }
 }

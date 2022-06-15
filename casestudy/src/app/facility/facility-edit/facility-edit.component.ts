@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {CustomerService} from '../../service/customer/customer.service';
+import {CustomerService} from '../../Customer/customer.service';
 import {ActivatedRoute, ParamMap} from '@angular/router';
-import {FacilityService} from '../../service/facility/facility.service';
+import {FacilityService} from '../facility.service';
 
 @Component({
   selector: 'app-facility-edit',

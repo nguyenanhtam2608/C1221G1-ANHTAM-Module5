@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {CustomerService} from '../../service/customer/customer.service';
+
 import {ActivatedRoute, ParamMap} from '@angular/router';
+import {CustomerService} from '../customer.service';
 
 @Component({
   selector: 'app-customer-edit',

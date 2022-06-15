@@ -8,7 +8,7 @@ import {Translate} from '../../model/translate';
   styleUrls: ['./translate-list.component.css']
 })
 export class TranslateListComponent implements OnInit {
-  translate: Translate[] = [];
+  words: Translate[] = [];
 
   constructor(private translateService: TranslateService) {
   }
@@ -18,7 +18,7 @@ export class TranslateListComponent implements OnInit {
   }
 
   getAll() {
-    this.translate = this.translateService.getAll();
+    this.words = this.translateService.getAll();
   }
 
 }

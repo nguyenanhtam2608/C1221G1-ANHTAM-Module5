@@ -6,7 +6,7 @@
     <td>Action</td>
 
   </tr>
-  <tr *ngFor="let translate of translate; index as i">
+  <tr *ngFor="let translate of words; index as i">
     <td>{{i + 1}}</td>
     <td>{{translate.dictionary}}</td>
     <td><a [routerLink]="['/translate/detail',translate.id]">Detail</a></td>

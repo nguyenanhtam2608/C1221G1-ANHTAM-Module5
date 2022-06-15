@@ -1,204 +1,227 @@
-<main>
-  <!-- slider Area Start-->
-  <div class="slider-area">
-    <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
-         data-background="assets/img/hero/roomspage_hero.jpg">
-      <div class="container">
-        <div class="row ">
-          <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
-            <div class="hero-caption">
-              <span>Rooms</span>
-              <h2>Our Rooms</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- slider Area End-->
-
-  <!-- Room Start -->
-  <section class="room-area r-padding1">
+<!-- slider Area Start-->
+<div class="slider-area">
+  <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
+       data-background="assets/img/hero/roomspage_hero.jpg">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <!--font-back-tittle  -->
-          <div class="font-back-tittle mb-45">
-            <div class="archivment-front">
-              <h3>Our Rooms</h3>
-            </div>
-            <h3 class="archivment-back">Our Rooms</h3>
-          </div>
-        </div>
-      </div>
-      <div class="row"  >
-        <div class="col-xl-4 col-lg-6 col-md-6" *ngFor=" let facility of facility">
-          <!-- Single Room -->
-          <div class="single-room mb-50">
-            <div class="room-img">
-              <a href="rooms.html">
-                <img [src]="facility.image"  ></a>
-            </div>
-            <div class="room-caption">
-              <h3><a href="rooms.html">{{facility.name}}</a></h3>
-              <div class="per-night">
-                <span><u>$</u>{{facility.rentalFee}} <span>/ par night</span></span>
-                <br>
-                <br>
-                <a [routerLink]="['/facility-edit',facility.id]" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"
-                                                                               style="float: left">&#xE254;</i></a>
-                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"
-                        data-placement="top"
-                        title="Delete" [routerLink]="['/modal']" style="float: right">
-                  <span style="background: red">Delete</span>
-                </button>
-
-              </div>
-            </div>
-          </div>
-        </div>
-<!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
-<!--          &lt;!&ndash; Single Room &ndash;&gt;-->
-<!--          <div class="single-room mb-50">-->
-<!--            <div class="room-img">-->
-<!--              <a href="rooms.html"><img src="assets/img/rooms/room2.jpg" alt=""></a>-->
-<!--            </div>-->
-<!--            <div class="room-caption">-->
-<!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
-<!--              <div class="per-night">-->
-<!--                <span><u>$</u>150 <span>/ par night</span></span>-->
-<!--                <br>-->
-<!--                <br>-->
-
-<!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
-<!--                                                                               style="float: left">&#xE254;</i></a>-->
-<!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
-<!--                        data-placement="top"-->
-<!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
-<!--                </button>-->
-
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
-<!--          &lt;!&ndash; Single Room &ndash;&gt;-->
-<!--          <div class="single-room mb-50">-->
-<!--            <div class="room-img">-->
-<!--              <a href="rooms.html"> <img src="assets/img/rooms/room3.jpg" alt=""></a>-->
-<!--            </div>-->
-<!--            <div class="room-caption">-->
-<!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
-<!--              <div class="per-night">-->
-<!--                <span><u>$</u>150 <span>/ par night</span></span>-->
-<!--                <br>-->
-<!--                <br>-->
-<!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
-<!--                                                                               style="float: left">&#xE254;</i></a>-->
-<!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
-<!--                        data-placement="top"-->
-<!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
-<!--                </button>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
-<!--          &lt;!&ndash; Single Room &ndash;&gt;-->
-<!--          <div class="single-room mb-50">-->
-<!--            <div class="room-img">-->
-<!--              <a href="rooms.html"><img src="assets/img/rooms/room4.jpg" alt=""></a>-->
-<!--            </div>-->
-<!--            <div class="room-caption">-->
-<!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
-<!--              <div class="per-night">-->
-<!--                <span><u>$</u>150 <span>/ par night</span></span>-->
-<!--                <br>-->
-<!--                <br>-->
-<!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
-<!--                                                                               style="float: left">&#xE254;</i></a>-->
-<!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
-<!--                        data-placement="top"-->
-<!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
-<!--                </button>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
-<!--          &lt;!&ndash; Single Room &ndash;&gt;-->
-<!--          <div class="single-room mb-50">-->
-<!--            <div class="room-img">-->
-<!--              <a href="rooms.html"><img src="assets/img/rooms/room5.jpg" alt=""></a>-->
-<!--            </div>-->
-<!--            <div class="room-caption">-->
-<!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
-<!--              <div class="per-night">-->
-<!--                <span><u>$</u>150 <span>/ par night</span></span>  <br>-->
-<!--                <br>-->
-<!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
-<!--                                                                               style="float: left">&#xE254;</i></a>-->
-<!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
-<!--                        data-placement="top"-->
-<!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
-<!--                </button>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
-<!--          &lt;!&ndash; Single Room &ndash;&gt;-->
-<!--          <div class="single-room mb-50">-->
-<!--            <div class="room-img">-->
-<!--              <a href="rooms.html"> <img src="assets/img/rooms/room6.jpg" alt=""></a>-->
-<!--            </div>-->
-<!--            <div class="room-caption">-->
-<!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
-<!--              <div class="per-night">-->
-<!--                <span><u>$</u>150 <span>/ par night</span></span>-->
-<!--                <br>-->
-<!--                <br>-->
-<!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
-<!--                                                                               style="float: left">&#xE254;</i></a>-->
-<!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
-<!--                        data-placement="top"-->
-<!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
-<!--                </button>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-      </div>
-      <div class="row justify-content-center">
-        <div class="room-btn pt-70">
-          <a href="#" class="btn view-btn1">View more <i class="ti-angle-right"></i> </a>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- Room End -->
-
-  <!-- Gallery img Start-->
-  <div class="gallery-area fix">
-    <div class="container-fluid p-0">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="gallery-active owl-carousel">
-            <div class="gallery-img">
-              <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
-            </div>
-            <div class="gallery-img">
-              <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
-            </div>
-            <div class="gallery-img">
-              <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
-            </div>
+      <div class="row ">
+        <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
+          <div class="hero-caption">
+            <span>Rooms</span>
+            <h2>Our Rooms</h2>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Gallery img End-->
-</main>
+</div>
+<!-- slider Area End-->
+
+<!-- Room Start -->
+<section class="room-area r-padding1">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-8">
+        <!--font-back-tittle  -->
+        <div class="font-back-tittle mb-45">
+          <div class="archivment-front">
+            <h3>Our Rooms</h3>
+          </div>
+          <h3 class="archivment-back">Our Rooms</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-6 col-md-6" *ngFor=" let facility of facility">
+        <!-- Single Room -->
+        <div class="single-room mb-50">
+          <div class="room-img">
+            <a href="rooms.html">
+              <img [src]="facility.image"></a>
+          </div>
+          <div class="room-caption">
+            <h3><a href="rooms.html">{{facility.name}}</a></h3>
+            <div class="per-night">
+              <span><u>$</u>{{facility.rentalFee}} <span>/ par night</span></span>
+              <br>
+              <br>
+              <a [routerLink]="['/facility-edit',facility.id]" class="edit" title="Edit" data-toggle="tooltip"><i
+                class="material-icons"
+                style="float: left">&#xE254;</i></a>
+              <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"
+                      data-placement="top"
+                      title="Delete" (click)="showDeleteModal(facility.id,facility.name)" style="float: right">
+                <span style="background: red">Delete</span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
+      <!--          &lt;!&ndash; Single Room &ndash;&gt;-->
+      <!--          <div class="single-room mb-50">-->
+      <!--            <div class="room-img">-->
+      <!--              <a href="rooms.html"><img src="assets/img/rooms/room2.jpg" alt=""></a>-->
+      <!--            </div>-->
+      <!--            <div class="room-caption">-->
+      <!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
+      <!--              <div class="per-night">-->
+      <!--                <span><u>$</u>150 <span>/ par night</span></span>-->
+      <!--                <br>-->
+      <!--                <br>-->
+
+      <!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
+      <!--                                                                               style="float: left">&#xE254;</i></a>-->
+      <!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
+      <!--                        data-placement="top"-->
+      <!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
+      <!--                </button>-->
+
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
+      <!--          &lt;!&ndash; Single Room &ndash;&gt;-->
+      <!--          <div class="single-room mb-50">-->
+      <!--            <div class="room-img">-->
+      <!--              <a href="rooms.html"> <img src="assets/img/rooms/room3.jpg" alt=""></a>-->
+      <!--            </div>-->
+      <!--            <div class="room-caption">-->
+      <!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
+      <!--              <div class="per-night">-->
+      <!--                <span><u>$</u>150 <span>/ par night</span></span>-->
+      <!--                <br>-->
+      <!--                <br>-->
+      <!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
+      <!--                                                                               style="float: left">&#xE254;</i></a>-->
+      <!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
+      <!--                        data-placement="top"-->
+      <!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
+      <!--                </button>-->
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
+      <!--          &lt;!&ndash; Single Room &ndash;&gt;-->
+      <!--          <div class="single-room mb-50">-->
+      <!--            <div class="room-img">-->
+      <!--              <a href="rooms.html"><img src="assets/img/rooms/room4.jpg" alt=""></a>-->
+      <!--            </div>-->
+      <!--            <div class="room-caption">-->
+      <!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
+      <!--              <div class="per-night">-->
+      <!--                <span><u>$</u>150 <span>/ par night</span></span>-->
+      <!--                <br>-->
+      <!--                <br>-->
+      <!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
+      <!--                                                                               style="float: left">&#xE254;</i></a>-->
+      <!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
+      <!--                        data-placement="top"-->
+      <!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
+      <!--                </button>-->
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
+      <!--          &lt;!&ndash; Single Room &ndash;&gt;-->
+      <!--          <div class="single-room mb-50">-->
+      <!--            <div class="room-img">-->
+      <!--              <a href="rooms.html"><img src="assets/img/rooms/room5.jpg" alt=""></a>-->
+      <!--            </div>-->
+      <!--            <div class="room-caption">-->
+      <!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
+      <!--              <div class="per-night">-->
+      <!--                <span><u>$</u>150 <span>/ par night</span></span>  <br>-->
+      <!--                <br>-->
+      <!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
+      <!--                                                                               style="float: left">&#xE254;</i></a>-->
+      <!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
+      <!--                        data-placement="top"-->
+      <!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
+      <!--                </button>-->
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--        <div class="col-xl-4 col-lg-6 col-md-6">-->
+      <!--          &lt;!&ndash; Single Room &ndash;&gt;-->
+      <!--          <div class="single-room mb-50">-->
+      <!--            <div class="room-img">-->
+      <!--              <a href="rooms.html"> <img src="assets/img/rooms/room6.jpg" alt=""></a>-->
+      <!--            </div>-->
+      <!--            <div class="room-caption">-->
+      <!--              <h3><a href="rooms.html">Classic Double Bed</a></h3>-->
+      <!--              <div class="per-night">-->
+      <!--                <span><u>$</u>150 <span>/ par night</span></span>-->
+      <!--                <br>-->
+      <!--                <br>-->
+      <!--                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"-->
+      <!--                                                                               style="float: left">&#xE254;</i></a>-->
+      <!--                <button class="custom-btn btn-12 " data-toggle="modal" data-target="#exampleModal"-->
+      <!--                        data-placement="top"-->
+      <!--                        title="Delete" [routerLink]="['/modal']" style="float: right"><span>Delete</span>-->
+      <!--                </button>-->
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+    </div>
+    <div class="row justify-content-center">
+      <div class="room-btn pt-70">
+        <a href="#" class="btn view-btn1">View more <i class="ti-angle-right"></i> </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- Room End -->
+
+<!-- Gallery img Start-->
+<div class="gallery-area fix">
+  <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="gallery-active owl-carousel">
+          <div class="gallery-img">
+            <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+          </div>
+          <div class="gallery-img">
+            <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+          </div>
+          <div class="gallery-img">
+            <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gallery img End-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style=" position: absolute;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" name="id" id="idCustomerDel">
+        <!--        <p>ID : {{idF}}</p>-->
+
+        Bạn có muốn xóa facility có tên là : <span style="color: red">{{nameF}}</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+        <input type="submit" (click)="deleteCustomer(idF)" data-dismiss="modal" class="btn btn-danger" value="Delete">
+      </div>
+    </div>
+  </div>
+</div>
+
+
 

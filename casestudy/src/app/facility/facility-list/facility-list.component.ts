@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Facility} from '../../model/facility';
-import {FacilityService} from '../../service/facility/facility.service';
+import {FacilityService} from '../facility.service';
 
 @Component({
   selector: 'app-facility-list',
@@ -9,6 +9,8 @@ import {FacilityService} from '../../service/facility/facility.service';
 })
 export class FacilityListComponent implements OnInit {
   facility: Facility[] = [];
+  idF: number;
+  nameF: string;
 
   constructor(private facilityService: FacilityService) {
   }
@@ -19,5 +21,15 @@ export class FacilityListComponent implements OnInit {
 
   getAll() {
     this.facility = this.facilityService.getAll();
+  }
+
+  showDeleteModal(id: number, name: string) {
+    this.idF = id;
+    this.nameF = name;
+  }
+
+  deleteCustomer(idF: number) {
+    this.facilityService.deleteFacility(idF);
+
   }
 }

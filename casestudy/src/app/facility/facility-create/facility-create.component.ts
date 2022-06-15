@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {FacilityService} from '../../service/facility/facility.service';
+import {FacilityService} from '../facility.service';
 
 @Component({
   selector: 'app-facility-create',

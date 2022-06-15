@@ -10,21 +10,23 @@ import {FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./translate-detail.component.css']
 })
 export class TranslateDetailComponent implements OnInit {
-  productForm: FormGroup;
+  // formTranslate: FormGroup;
   id: number;
+  words: Translate;
 
-  translate: Translate[] = [];
+  // translate: Translate[] = [];
 
   constructor(private translateService: TranslateService,
               private activatedRoute: ActivatedRoute) {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = +paramMap.get('id');
-      const translate = this.getTranslate(this.id);
-      this.productForm = new FormGroup({
-        id: new FormControl(translate.id),
-        dictionary: new FormControl(translate.dictionary),
-        translate: new FormControl(translate.translate)
-      });
+      // const translate = this.getTranslate(this.id);
+      // this.formTranslate = new FormGroup({
+      //   id: new FormControl(translate.id),
+      //   dictionary: new FormControl(translate.dictionary),
+      //   translate: new FormControl(translate.translate)
+      // });
+      this.words = this.translateService.findById(this.id);
     });
   }
 

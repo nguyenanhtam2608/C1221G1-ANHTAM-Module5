@@ -1,5 +1,5 @@
 
-<body class="p-3 mb-2 bg-secondary text-white">
+<body class="p-3 mb-2 badge-light " >
 <h3 style="text-align: center">CREATE CONTRACT</h3>
 
 <form [formGroup]="validateContract" (ngSubmit)="onSub()">
@@ -27,63 +27,49 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Start day</label>
-      <input type="date" class="form-control"  placeholder="Start day">
+      <input type="date" class="form-control" formControlName="startDay" placeholder="Start day">
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">End day</label>
-      <input type="date" class="form-control"  placeholder="End day">
+      <input type="date" class="form-control" formControlName="endDate"  placeholder="End day">
     </div>
   </div>
   <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Deposit</label>
-      <input type="number" class="form-control" id="inputEmail" placeholder="Deposit">
-    </div>
-    <div class="form-group col-md-6">
+
+    <div class="form-group col-md-12">
       <label for="inputPassword4">Total Money</label>
-      <input type="number" class="form-control" id="inputPassword2" placeholder="Total Money">
+      <input type="number" class="form-control" id="inputPassword2" formControlName="total" placeholder="Total Money">
     </div>
   </div>
   <div class="form-row">
-    <div class="form-group col-md-4">
+    <div class="form-group col-md-6">
       <label for="inputState">Customer</label>
       <select id="inputState" class="form-control">
         <option selected>Customer</option>
-        <option value="1">Tam1</option>
-        <option value="2">Tam2</option>
-        <option value="3">tam3</option>
+        <option formControlName="customer" value="1">Tam1</option>
+        <option formControlName="customer" value="2">Tam2</option>
+        <option formControlName="customer" value="3">tam3</option>
       </select>
     </div>
 
-    <div class="form-group col-md-4">
+    <div class="form-group col-md-6">
       <label for="inputState">Service</label>
       <select id="inputStatee" class="form-control">
         <option selected>Service</option>
-        <option value="1">Tam1</option>
-        <option value="2">Tam2</option>
-        <option value="3">tam3</option>
+        <option formControlName="facility" value="1">Tam1</option>
+        <option formControlName="facility" value="2">Tam2</option>
+        <option formControlName="facility" value="3">tam3</option>
       </select>
     </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">Employee</label>
-      <select id="inputStateee" class="form-control">
-        <option selected>Employee</option>
-        <option value="1">Tam1</option>
-        <option value="2">Tam2</option>
-        <option value="3">tam3</option>
-      </select>
-    </div>
-
-
   </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
-  </div>
+<!--  <div class="form-group">-->
+<!--    <div class="form-check">-->
+<!--      <input class="form-check-input" type="checkbox" id="gridCheck">-->
+<!--      <label class="form-check-label" for="gridCheck">-->
+<!--        Check me out-->
+<!--      </label>-->
+<!--    </div>-->
+<!--  </div>-->
   <div class="row justify-content-center">
     <button type="submit" class="btn btn-primary ">Sign in</button>
   </div>

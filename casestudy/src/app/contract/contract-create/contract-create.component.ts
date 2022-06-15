@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {ContractService} from '../../service/contract/contract.service';
+import {ContractService} from '../contract.service';
 
 @Component({
   selector: 'app-contract-create',
@@ -15,6 +15,13 @@ export class ContractCreateComponent implements OnInit {
   validateContract = new FormGroup({
     id: new FormControl('', [Validators.required]),
     deposit: new FormControl('', [Validators.required, Validators.pattern('^\\+*\\d+$')]),
+    startDate: new FormControl(''),
+    endDate: new FormControl(''),
+    total: new FormControl(''),
+    customer: new FormControl(''),
+    facility: new FormControl(''),
+
+
 
 
   });

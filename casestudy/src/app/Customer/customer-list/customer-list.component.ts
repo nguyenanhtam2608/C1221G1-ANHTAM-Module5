@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Customer} from '../../model/customer';
-import {CustomerService} from '../../service/customer/customer.service';
+import {CustomerService} from '../customer.service';
 
 @Component({
   selector: 'app-customer-list',
@@ -9,20 +9,29 @@ import {CustomerService} from '../../service/customer/customer.service';
 })
 export class CustomerListComponent implements OnInit {
   customer: Customer[] = [];
+  idC: number;
+  nameC: string;
 
   constructor(private customerService: CustomerService) {
 
   }
 
   ngOnInit() {
-    this.getAll ();
+    this.getAll();
   }
 
   getAll() {
     this.customer = this.customerService.getAll();
   }
 
+  showDeleteModal(id: number, name: string) {
+    this.idC = id;
+    this.nameC = name;
+  }
 
+  deleteCustomer(idDel: number) {
+    this.customerService.deleteCustomer(idDel);
+  }
 
 }
 
