@@ -113,11 +113,11 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <span class="form-label">Sex</span>
-                  <select class="form-control">
-
-                    <option formControlName="gender" value="1">Nam</option>
-                    <option formControlName="gender" value="2">Nữ</option>
+                  <span class="form-label">Gender</span>
+                  <select class="form-control" formControlName="gender">
+                    <option value="">Select Gender</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
                   </select>
                   <span class="select-arrow"></span>
                 </div>
@@ -125,12 +125,15 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <span class="form-label">Customer Type</span>
-                  <select class="form-control">
+                  <select class="form-control" formControlName="customerType">
+                    <option value="">Select Customer Type</option>
+                    <option *ngFor="let typeOfCustomer of customerTypes"
+                            [ngValue]="typeOfCustomer">{{typeOfCustomer.name}}</option>
 
-                    <option formControlName="customerType" value="1">Diamond</option>
-                    <option formControlName="customerType" value="2">Platinum</option>
-                    <option formControlName="customerType" value="3">Gold</option>
-                    <option formControlName="customerType" value="4">Silver</option>
+                    <!--                    <option formControlName="customerType" value="1">Diamond</option>-->
+                    <!--                    <option formControlName="customerType" value="2">Platinum</option>-->
+                    <!--                    <option formControlName="customerType" value="3">Gold</option>-->
+                    <!--                    <option formControlName="customerType" value="4">Silver</option>-->
                   </select>
                   <span class="select-arrow"></span>
                 </div>

@@ -1,22 +1,8 @@
 {
   "customer": [
     {
-      "id": 1,
-      "name": "Nguyễn Anh Tâm ",
-      "dayOfBirth": "2002-07-01",
-      "gender": 1,
-      "nationalId": "344343432",
-      "phone": "0987654321",
-      "mail": "thihao07@gmail.com",
-      "address": "23 Nguyễn Hoàng, Đà Nẵng",
-      "customerType": {
-        "id": 1,
-        "name": "Kim cương"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Nguyễn Anh Tâm ",
+      "id": "2",
+      "name": "Nguyễn Anh ",
       "dayOfBirth": "2002-07-01",
       "gender": 1,
       "nationalId": "344343432",
@@ -25,12 +11,13 @@
       "address": "23 Nguyễn Hoàng, Đà Nẵng",
       "customerType": {
         "id": 2,
-        "name": "Kim cương"
-      }
+        "name": "Member"
+      },
+      "salary": "2000"
     },
     {
       "id": 3,
-      "name": "Nguyễn Anh Tâm ",
+      "name": "Tâm ",
       "dayOfBirth": "2002-07-01",
       "gender": 0,
       "nationalId": "344343432",
@@ -39,8 +26,9 @@
       "address": "23 Nguyễn Hoàng, Đà Nẵng",
       "customerType": {
         "id": 1,
-        "name": "Kim cương"
-      }
+        "name": "Member"
+      },
+      "salary": "2000"
     },
     {
       "id": 4,
@@ -51,9 +39,10 @@
       "phone": "0987654321",
       "mail": "thihao07@gmail.com",
       "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "salary": "2000",
       "customerType": {
         "id": 1,
-        "name": "Kim cương"
+        "name": "Silver"
       }
     },
     {
@@ -65,21 +54,11 @@
       "phone": "0987654321",
       "mail": "thihao07@gmail.com",
       "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "salary": "2000",
       "customerType": {
         "id": 2,
-        "name": "Kim cương"
+        "name": "Gold"
       }
-    },
-    {
-      "id": "Kh-1234",
-      "name": "tâm nguyễn",
-      "dayOfBirth": "2022-06-01",
-      "gender": "",
-      "nationalId": "123456789",
-      "phone": "0903709673",
-      "mail": "nguyenanhtam12344321@gmail.com",
-      "address": "điện thọ",
-      "salary": "123123"
     }
   ]
 }

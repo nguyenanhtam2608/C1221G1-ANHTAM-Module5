@@ -1,7 +1,7 @@
 {
   "customer": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Nguyễn Anh Tâm ",
       "dayOfBirth": "2002-07-01",
       "gender": 1,
@@ -9,25 +9,29 @@
       "phone": "0987654321",
       "mail": "thihao07@gmail.com",
       "address": "23 Nguyễn Hoàng, Đà Nẵng",
-      "customerType": {"id": 1, "name": "Kim cương"}
-    }
-  ,
+      "salary": "2000",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
     {
-      "id": 2,
+      "id": "2",
       "name": "Nguyễn Anh Tâm ",
       "dayOfBirth": "2002-07-01",
       "gender": 1,
       "nationalId": "344343432",
-        "phone": "0987654321",
+      "phone": "0987654321",
       "mail": "thihao07@gmail.com",
       "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "salary": "2000",
       "customerType": {
         "id": 2,
-        "name": "Kim cương"
+        "name": "Member"
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Nguyễn Anh Tâm ",
       "dayOfBirth": "2002-07-01",
       "gender": 0,
@@ -35,13 +39,14 @@
       "phone": "0987654321",
       "mail": "thihao07@gmail.com",
       "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "salary": "2000",
       "customerType": {
         "id": 1,
-        "name": "Kim cương"
+        "name": "Member"
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Nguyễn Anh Tâm ",
       "dayOfBirth": "2002-07-01",
       "gender": 0,
@@ -49,9 +54,10 @@
       "phone": "0987654321",
       "mail": "thihao07@gmail.com",
       "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "salary": "2000",
       "customerType": {
         "id": 1,
-        "name": "Kim cương"
+        "name": "Silver"
       }
     },
     {
@@ -63,9 +69,71 @@
       "phone": "0987654321",
       "mail": "thihao07@gmail.com",
       "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "salary": "2000",
       "customerType": {
         "id": 2,
-        "name": "Kim cương"
-      }}]
-
+        "name": "Gold"
+      }
+    },
+    {
+      "id": "Kh-1234",
+      "name": "tâm nguyễn",
+      "dayOfBirth": "2022-06-01",
+      "gender": "1",
+      "nationalId": "123456789",
+      "phone": "0903709673",
+      "mail": "nguyenanhtam12344321@gmail.com",
+      "address": "điện thọ",
+      "salary": "123123",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      }
+    },
+    {
+      "id": "KH-2134",
+      "name": "tâm nguyễn",
+      "dayOfBirth": "2022-06-12",
+      "gender": "1",
+      "nationalId": "12345654312",
+      "phone": "0903709673",
+      "mail": "asjkbdfaskld@gamil.com",
+      "address": "điện thọ",
+      "salary": "12313",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
+    },
+    {
+      "id": "KH-1234",
+      "name": "tâm nguyễn",
+      "dayOfBirth": "2022-06-24",
+      "gender": "1",
+      "nationalId": "1231231231231",
+      "phone": "0903709673",
+      "mail": "nguyenanhtam12344321@gmail.com",
+      "address": "điện thọ",
+      "salary": "123123",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      }
+    },
+    {
+      "id": "KH-1233",
+      "name": "tâm nguyễn",
+      "dayOfBirth": "2022-06-11",
+      "gender": "0",
+      "nationalId": "12321312312",
+      "phone": "0903709673",
+      "mail": "nguyenanhtam12344321@gmail.com",
+      "address": "điện thọ",
+      "salary": "12312",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      }
+    }
+  ]
 }

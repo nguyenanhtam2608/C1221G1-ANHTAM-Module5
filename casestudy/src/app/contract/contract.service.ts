@@ -9,6 +9,8 @@ export class ContractService {
   constructor() {
   }
 
+  // @ts-ignore
+  // @ts-ignore
   contractArray: Contract[] = [
     {
       id: 1,
@@ -17,7 +19,7 @@ export class ContractService {
       deposit: 2000,
       total: 1000000,
       customer: {
-        id: 1,
+        id:  '1',
         name: 'Nguyễn Thị Hào',
         dayOfBirth: '1970-11-07',
         gender: 0,
@@ -25,6 +27,7 @@ export class ContractService {
         phone: '0905423362',
         mail: 'thihao07@gmail.com',
         address: '23 Nguyễn Hoàng, Đà Nẵng',
+        salary: '2000',
         customerType: {
           id: 5,
           name: 'Member'
@@ -43,7 +46,7 @@ export class ContractService {
       deposit: 2000,
       total: 1000000,
       customer: {
-        id: 1,
+        id: '1',
         name: 'Nguyễn Thị Hào',
         dayOfBirth: '1970-11-07',
         gender: 0,
@@ -51,6 +54,7 @@ export class ContractService {
         phone: '0905423362',
         mail: 'thihao07@gmail.com',
         address: '23 Nguyễn Hoàng, Đà Nẵng',
+        salary: '2000',
         customerType: {
           id: 5,
           name: 'Member'
@@ -69,7 +73,7 @@ export class ContractService {
       deposit: 2000,
       total: 1000000,
       customer: {
-        id: 1,
+        id: '1',
         name: 'Nguyễn Thị Hào',
         dayOfBirth: '1970-11-07',
         gender: 0,
@@ -77,6 +81,7 @@ export class ContractService {
         phone: '0905423362',
         mail: 'thihao07@gmail.com',
         address: '23 Nguyễn Hoàng, Đà Nẵng',
+        salary: '2000',
         customerType: {
           id: 5,
           name: 'Member'
@@ -95,7 +100,7 @@ export class ContractService {
       deposit: 2000,
       total: 1000000,
       customer: {
-        id: 1,
+        id: '1',
         name: 'Nguyễn Thị Hào',
         dayOfBirth: '1970-11-07',
         gender: 0,
@@ -103,6 +108,7 @@ export class ContractService {
         phone: '0905423362',
         mail: 'thihao07@gmail.com',
         address: '23 Nguyễn Hoàng, Đà Nẵng',
+        salary: '2000',
         customerType: {
           id: 5,
           name: 'Member'
@@ -121,7 +127,7 @@ export class ContractService {
       deposit: 2000,
       total: 1000000,
       customer: {
-        id: 1,
+        id: '1',
         name: 'Nguyễn Thị Hào',
         dayOfBirth: '1970-11-07',
         gender: 0,
@@ -129,6 +135,7 @@ export class ContractService {
         phone: '0905423362',
         mail: 'thihao07@gmail.com',
         address: '23 Nguyễn Hoàng, Đà Nẵng',
+        salary: '2000',
         customerType: {
           id: 5,
           name: 'Member'
@@ -147,7 +154,7 @@ export class ContractService {
       deposit: 2000,
       total: 1000000,
       customer: {
-        id: 1,
+        id: '1',
         name: 'Nguyễn Thị Hào',
         dayOfBirth: '1970-11-07',
         gender: 0,
@@ -155,6 +162,7 @@ export class ContractService {
         phone: '0905423362',
         mail: 'thihao07@gmail.com',
         address: '23 Nguyễn Hoàng, Đà Nẵng',
+        salary: '2000',
         customerType: {
           id: 5,
           name: 'Member'
@@ -173,7 +181,7 @@ export class ContractService {
       deposit: 2000,
       total: 1000000,
       customer: {
-        id: 1,
+        id: '1',
         name: 'Nguyễn Thị Hào',
         dayOfBirth: '1970-11-07',
         gender: 0,
@@ -181,6 +189,7 @@ export class ContractService {
         phone: '0905423362',
         mail: 'thihao07@gmail.com',
         address: '23 Nguyễn Hoàng, Đà Nẵng',
+        salary: '2000',
         customerType: {
           id: 5,
           name: 'Member'
@@ -192,6 +201,7 @@ export class ContractService {
         name: 'Room Twin 01'
       },
       serviceInclude: 'karaoke, buffet sáng, thuê xe đạp'
+
     },
   ];
 

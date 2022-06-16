@@ -93,29 +93,29 @@ export class CustomerService {
   //   this.customerArray.push(customer);
   // }
 
-  findById(id: number) {
-    // tslint:disable-next-line:no-shadowed-variable
-    return this.customerArray.find(customer => customer.id === id);
-  }
+  // findById(id: number) {
+  //   // tslint:disable-next-line:no-shadowed-variable
+  //   return this.customerArray.find(customer => customer.id === id);
+  // }
 
-  updateCustomer(id: number, custome: Customer) {
-    for (let i = 0; i < this.customerArray.length; i++) {
-      // @ts-ignore
-      if (this.customerArray[i].id === id) {
-        this.customerArray[i] = custome;
-      }
-    }
-  }
+  // updateCustomer(id: string, custome: Customer) {
+  //   for (let i = 0; i < this.customerArray.length; i++) {
+  //     // @ts-ignore
+  //     if (this.customerArray[i].id === id) {
+  //       this.customerArray[i] = custome;
+  //     }
+  //   }
+  // }
 
 
-  deleteCustomer(idDel: number) {
-    for (let i = 0; i < this.customerArray.length; i++) {
-      // @ts-ignore
-      if (this.customerArray[i].id === idDel) {
-        this.customerArray.splice(i, 1);
-      }
-    }
-  }
+  // deleteCustomer(idDel: number) {
+  //   for (let i = 0; i < this.customerArray.length; i++) {
+  //     // @ts-ignore
+  //     if (this.customerArray[i].id === idDel) {
+  //       this.customerArray.splice(i, 1);
+  //     }
+  //   }
+  // }
 
   constructor(private  http: HttpClient) {
   }
@@ -130,5 +130,17 @@ export class CustomerService {
       map((response: any) => response));
   }
 
+
+  findById(id: string): Observable<Customer> {
+    return this.http.get<Customer>(`${'http://localhost:3000/customer'}/${id}`);
+  }
+
+  updateCustomer(id: string, customer: Customer): Observable<Customer> {
+    return this.http.put<Customer>(`${'http://localhost:3000/customer'}/${id}`, customer);
+  }
+
+  deleteCustomer(id: string): Observable<Customer> {
+    return this.http.delete<Customer>(`${'http://localhost:3000/customer'}/${id}`);
+  }
 
 }

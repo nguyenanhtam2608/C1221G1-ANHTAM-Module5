@@ -3,6 +3,8 @@ import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/
 import {BrowserModule} from '@angular/platform-browser';
 import {CustomerService} from '../customer.service';
 import {Customer} from '../model/customer';
+import {CustomerType} from '../model/customer-type';
+import {CustomerTypeService} from '../customer-type.service';
 
 @Component({
   selector: 'app-customer-create',
@@ -22,10 +24,13 @@ export class CustomerCreateComponent implements OnInit {
     mail: new FormControl('', [Validators.required, Validators.email]),
     address: new FormControl('', [Validators.required]),
     salary: new FormControl('', [Validators.required]),
+    customerType: new FormControl('', [Validators.required]),
   });
   customer: Customer[] = [];
+  customerTypes: CustomerType[] = [];
 
-  constructor(private customerService: CustomerService) {
+  constructor(private customerService: CustomerService,
+              private customerTypeService: CustomerTypeService) {
   }
 
   //
@@ -43,7 +48,9 @@ export class CustomerCreateComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.customerTypes = this.customerTypeService.getAllCustomerType();
   }
+
 
 
 }

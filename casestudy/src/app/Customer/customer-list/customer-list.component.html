@@ -32,19 +32,21 @@
           <td>{{customer.address}}</td>
           <td>{{customer.mail}}</td>
           <td>{{customer.nationalId}}</td>
-          <td *ngIf="customer.gender== 1"> Nam</td>
-          <td *ngIf="customer.gender== 0"> Nữ</td>
-          <td>
-          <td>{{customer.customerType.name}}</td>
-            <a class="view" title="View" data-toggle="tooltip"><i
-              class="material-icons">&#xE417;</i></a>
-            <a [routerLink]="['/customer/edit',customer.id]" class="edit" title="Edit" data-toggle="tooltip"><i
-              class="material-icons">&#xE254;</i></a>
+          <td *ngIf="customer.gender== 0"> Male</td>
+          <td *ngIf="customer.gender== 1"> Female</td>
 
-            <button type="button" class="btn btn-danger btn-sm" (click)="showDeleteModal(customer.id,customer.name)"
-                    data-toggle="modal" data-target="#exampleModal">
-              <i class="material-icons">&#xE872;</i>
-            </button>
+          <td *ngIf="customer.customerType">{{customer.customerType.name}}</td>
+          <td *ngIf="customer.customerType == null"></td>
+          <td>
+          <a class="view" title="View" data-toggle="tooltip"><i
+            class="material-icons">&#xE417;</i></a>
+          <a [routerLink]="['/customer/edit',customer.id]" class="edit" title="Edit" data-toggle="tooltip"><i
+            class="material-icons">&#xE254;</i></a>
+
+          <button type="button" class="btn btn-danger btn-sm" (click)="showDeleteModal(customer.id,customer.name)"
+                  data-toggle="modal" data-target="#exampleModal">
+            <i class="material-icons">&#xE872;</i>
+          </button>
           </td>
         </tr>
         </tbody>

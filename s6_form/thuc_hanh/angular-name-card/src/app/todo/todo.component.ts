@@ -5,6 +5,7 @@ import {TodoService} from '../todo.service';
 
 // tslint:disable-next-line:variable-name
 let _id = 1;
+
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
@@ -13,14 +14,17 @@ let _id = 1;
 export class TodoComponent implements OnInit {
   todos: Todo[] = [];
   content = new FormControl();
+  todoList: Todo[];
+
+
 
   constructor(private todoService: TodoService) {
-    this.todoService.getAll().subscribe(next => {
-      this.todos = next;
-    });
   }
 
   ngOnInit() {
+    this.todoService.getAll().subscribe(value => {
+      this.todoList = value;
+    });
   }
 
   toggleTodo(i: number) {
@@ -40,9 +44,6 @@ export class TodoComponent implements OnInit {
     }
   }
   delete(id: number) {
-    this.todoService.deleteTodo(id).subscribe(() => {
-      this.todoService.deleteTodo(id);
-      this.ngOnInit();
-    });
+    this.todoService.deleteTodo(id).subscribe();
   }
 }

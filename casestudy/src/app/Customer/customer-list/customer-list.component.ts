@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Customer} from '../model/customer';
 import {CustomerService} from '../customer.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-customer-list',
@@ -11,10 +12,10 @@ import {CustomerService} from '../customer.service';
 export class CustomerListComponent implements OnInit {
   customer: Customer[] = [];
   customer1: Customer;
-  idC: number;
+  idC: string;
   nameC: string;
 
-  constructor(private customerService: CustomerService) {
+  constructor(private customerService: CustomerService, private route: Router) {
     // this.customerService.getAll().subscribe(next => {
     //   this.customer = next;
     // });
@@ -28,17 +29,19 @@ export class CustomerListComponent implements OnInit {
   // getAll() {
   //   this.customer = this.customerService.getAll();
   // }
- getAll() {
-  this.customerService.getAll().subscribe(customer1 => this.customer1 = customer1);
+  getAll() {
+    this.customerService.getAll().subscribe(customer1 => this.customer1 = customer1);
   }
 
-  showDeleteModal(id: number, name: string) {
+  showDeleteModal(id: string, name: string) {
     this.idC = id;
     this.nameC = name;
   }
 
-  deleteCustomer(idDel: number) {
-    this.customerService.deleteCustomer(idDel);
+  deleteCustomer(idDel: string) {
+    this.customerService.deleteCustomer(idDel).subscribe();
+    this.route.navigateByUrl('/customer/list');
+    this.ngOnInit();
   }
 
 }
