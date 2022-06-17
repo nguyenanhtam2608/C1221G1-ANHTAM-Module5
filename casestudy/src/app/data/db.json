@@ -1,139 +1,86 @@
 {
   "customer": [
     {
-      "id": "1",
-      "name": "Nguyễn Anh Tâm ",
-      "dayOfBirth": "2002-07-01",
-      "gender": 1,
-      "nationalId": "344343432",
-      "phone": "0987654321",
-      "mail": "thihao07@gmail.com",
-      "address": "23 Nguyễn Hoàng, Đà Nẵng",
-      "salary": "2000",
-      "customerType": {
-        "id": 1,
-        "name": "Diamond"
-      }
-    },
-    {
-      "id": "2",
-      "name": "Nguyễn Anh Tâm ",
-      "dayOfBirth": "2002-07-01",
-      "gender": 1,
-      "nationalId": "344343432",
-      "phone": "0987654321",
-      "mail": "thihao07@gmail.com",
-      "address": "23 Nguyễn Hoàng, Đà Nẵng",
-      "salary": "2000",
-      "customerType": {
-        "id": 2,
-        "name": "Member"
-      }
-    },
-    {
-      "id": "3",
-      "name": "Nguyễn Anh Tâm ",
-      "dayOfBirth": "2002-07-01",
-      "gender": 0,
-      "nationalId": "344343432",
-      "phone": "0987654321",
-      "mail": "thihao07@gmail.com",
-      "address": "23 Nguyễn Hoàng, Đà Nẵng",
-      "salary": "2000",
-      "customerType": {
-        "id": 1,
-        "name": "Member"
-      }
-    },
-    {
-      "id": "4",
-      "name": "Nguyễn Anh Tâm ",
-      "dayOfBirth": "2002-07-01",
-      "gender": 0,
-      "nationalId": "344343432",
-      "phone": "0987654321",
-      "mail": "thihao07@gmail.com",
-      "address": "23 Nguyễn Hoàng, Đà Nẵng",
-      "salary": "2000",
-      "customerType": {
-        "id": 1,
-        "name": "Silver"
-      }
-    },
-    {
-      "id": 5,
-      "name": "Nguyễn Anh Tâm ",
-      "dayOfBirth": "2002-07-01",
-      "gender": 0,
-      "nationalId": "344343432",
-      "phone": "0987654321",
-      "mail": "thihao07@gmail.com",
-      "address": "23 Nguyễn Hoàng, Đà Nẵng",
-      "salary": "2000",
-      "customerType": {
-        "id": 2,
-        "name": "Gold"
-      }
-    },
-    {
-      "id": "Kh-1234",
-      "name": "tâm nguyễn",
-      "dayOfBirth": "2022-06-01",
+      "id": "KH-1345",
+      "name": "Nat",
+      "dayOfBirth": "2022-06-14",
       "gender": "1",
       "nationalId": "123456789",
       "phone": "0903709673",
       "mail": "nguyenanhtam12344321@gmail.com",
       "address": "điện thọ",
-      "salary": "123123",
       "customerType": {
-        "id": 2,
-        "name": "Platinium"
-      }
+        "id": "5",
+        "name": "Member"
+      },
+      "salary": "123123"
     },
     {
-      "id": "KH-2134",
-      "name": "tâm nguyễn",
+      "id": "KH-2608",
+      "name": "Nguyễn Anh Tâm",
       "dayOfBirth": "2022-06-12",
-      "gender": "1",
-      "nationalId": "12345654312",
-      "phone": "0903709673",
-      "mail": "asjkbdfaskld@gamil.com",
-      "address": "điện thọ",
-      "salary": "12313",
-      "customerType": {
-        "id": 3,
-        "name": "Gold"
-      }
-    },
-    {
-      "id": "KH-1234",
-      "name": "tâm nguyễn",
-      "dayOfBirth": "2022-06-24",
-      "gender": "1",
-      "nationalId": "1231231231231",
+      "gender": "0",
+      "nationalId": "123456789",
       "phone": "0903709673",
       "mail": "nguyenanhtam12344321@gmail.com",
       "address": "điện thọ",
-      "salary": "123123",
       "customerType": {
-        "id": 5,
+        "id": "4",
+        "name": "Silver"
+      },
+      "salary": "1234"
+    },
+    {
+      "id": "KH-1234",
+      "name": "msi",
+      "dayOfBirth": "2022-06-12",
+      "gender": "0",
+      "nationalId": "206405031",
+      "phone": "0903709673",
+      "mail": "msi@gmail.com",
+      "address": "điện thọ",
+      "salary": "2000",
+      "customerType": {
+        "id": "5",
         "name": "Member"
       }
     },
     {
-      "id": "KH-1233",
+      "id": "KH-2000",
       "name": "tâm nguyễn",
-      "dayOfBirth": "2022-06-11",
-      "gender": "0",
-      "nationalId": "12321312312",
+      "dayOfBirth": "2022-06-13",
+      "gender": "1",
+      "nationalId": "234567890",
       "phone": "0903709673",
       "mail": "nguyenanhtam12344321@gmail.com",
       "address": "điện thọ",
-      "salary": "12312",
+      "salary": "1234",
       "customerType": {
-        "id": 4,
+        "id": "4",
         "name": "Silver"
       }
+    }
+  ],
+  "customerType": [
+    {
+      "id": "1",
+      "name": "Diamond"
+    },
+    {
+      "id": "2",
+      "name": "Platinum"
+    },
+    {
+      "id": "3",
+      "name": "Gold"
+    },
+    {
+      "id": "4",
+      "name": "Silver"
+    },
+    {
+      "id": "5",
+      "name": "Member"
     }
   ]
 }

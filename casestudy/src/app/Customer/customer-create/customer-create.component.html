@@ -25,11 +25,11 @@
                   <input class="form-control" type="text" formControlName="id" placeholder="Enter your Id ">
                 </div>
                 <p style="color: red"
-                   *ngIf="customerCreate.controls.id.hasError('required')  && customerCreate.controls.id.touched">Is
-                  not empty</p>
+                   *ngIf="customerCreate.controls.id.hasError('required')  && customerCreate.controls.id.touched">Is not empty</p>
                 <p style="color: red"
-                   *ngIf="customerCreate.controls.id.hasError('pattern')  && customerCreate.controls.id.touched">Format
-                  KH-XXXX </p>
+                   *ngIf="customerCreate.controls.id.hasError('pattern')  && customerCreate.controls.id.touched">Format   KH-XXXX </p>
+
+                <p *ngIf="customerCreate.controls.id.hasError('valid') && customerCreate.controls.id.touched" style="color: red">Id đã được đăng kí </p>
               </div>
             </div>
             <div class="row">
@@ -130,10 +130,6 @@
                     <option *ngFor="let typeOfCustomer of customerTypes"
                             [ngValue]="typeOfCustomer">{{typeOfCustomer.name}}</option>
 
-                    <!--                    <option formControlName="customerType" value="1">Diamond</option>-->
-                    <!--                    <option formControlName="customerType" value="2">Platinum</option>-->
-                    <!--                    <option formControlName="customerType" value="3">Gold</option>-->
-                    <!--                    <option formControlName="customerType" value="4">Silver</option>-->
                   </select>
                   <span class="select-arrow"></span>
                 </div>
@@ -141,7 +137,7 @@
             </div>
 
             <div class="form-btn">
-              <button type="submit" [disabled]="customerCreate.valid" class="submit-btn">Create</button>
+              <button type="submit" class="submit-btn">Create</button>
             </div>
           </form>
 

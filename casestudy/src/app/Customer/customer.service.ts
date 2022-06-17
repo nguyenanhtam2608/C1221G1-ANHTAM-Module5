@@ -120,14 +120,12 @@ export class CustomerService {
   constructor(private  http: HttpClient) {
   }
 
-  getAll(): Observable<Customer> {
-    return this.http.get('http://localhost:3000/customer').pipe(
-      map((response: any) => response));
+  getAll(): Observable<Customer[]> {
+    return this.http.get<Customer[]>('http://localhost:3000/customer');
   }
 
   saveCustomer(customer): Observable<Customer> {
-    return this.http.post<Customer>('http://localhost:3000/customer', customer).pipe(
-      map((response: any) => response));
+    return this.http.post<Customer>('http://localhost:3000/customer', customer);
   }
 
 
@@ -136,11 +134,16 @@ export class CustomerService {
   }
 
   updateCustomer(id: string, customer: Customer): Observable<Customer> {
-    return this.http.put<Customer>(`${'http://localhost:3000/customer'}/${id}`, customer);
+    return this.http.put<Customer>(`${'http://localhost:3000'}/customer'${id}`, customer);
   }
 
   deleteCustomer(id: string): Observable<Customer> {
     return this.http.delete<Customer>(`${'http://localhost:3000/customer'}/${id}`);
   }
 
+  searchCustomerName(name: string): Observable<Customer[]> {
+    return this.http.get<Customer[]>(`${'http://localhost:3000'}/customer?name_like=${name}`);
+  }
+
 }
+

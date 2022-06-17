@@ -53,15 +53,19 @@ export class CustomerEditComponent implements OnInit {
 
   onSubmit(id: string) {
     const customer = this.customerUpdate.value;
+
     this.customerService.updateCustomer(id, customer).subscribe(() => {
       alert('Thanh Cong');
     });
 
   }
 
-  ngOnInit(): void {
-    this.customerTypes = this.customerTypeService.getAllCustomerType();
-  }
 
+  ngOnInit(): void {
+    this.customerTypeService.getAllCustomerType().subscribe(customerTypes => {
+      this.customerTypes = customerTypes;
+    });
+
+  }
 }
 
