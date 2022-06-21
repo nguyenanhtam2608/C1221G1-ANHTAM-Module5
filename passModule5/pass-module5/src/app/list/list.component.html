@@ -1,3 +1,4 @@
+<script src="../model/loai-xe.ts"></script>
 <div class="container-xl">
   <div>
     <div class="table-wrapper">
@@ -5,7 +6,17 @@
         <div class="row">
           <div class="col-sm-8"><h2>Customer <b>Details</b></h2></div>
 
+          <div class="col-sm-4">
+            <div class="search-box">
+              <i class="material-icons">&#xE8B6;</i>
+              <input type="text" class="form-control" placeholder="Name&hellip;" (input)="searchDiemDen()"
+                     name="name" #nameSearch>
+            </div>
+          </div>
 
+          <div class="container mt-3">
+            <button type="button" class="btn btn-outline-secondary" [routerLink]="['/create']">Thêm mới</button>
+          </div>
 
 
 
@@ -52,7 +63,8 @@
         </tbody>
       </table>
       <div>
-        <mat-paginator [pageSizeOptions]="[2, 4, 6, 8]" [pageSize]="2" [length]="totalElements" (page)="nextPage($event)"> </mat-paginator>
+        <mat-paginator [pageSizeOptions]="[2, 4, 6, 8]" [pageSize]="2" [length]="totalElements"
+                       (page)="nextPage($event)"></mat-paginator>
       </div>
     </div>
   </div>

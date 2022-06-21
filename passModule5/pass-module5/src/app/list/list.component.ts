@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {BenXe} from './ben-xe';
+import {BenXe} from '../model/ben-xe';
 import {BenXeService} from '../service/ben-xe.service';
 import {TenNhaXeService} from '../service/ten-nha-xe.service';
 import {LoaiXeService} from '../service/loai-xe.service';
@@ -64,5 +64,8 @@ export class ListComponent implements OnInit {
       }, error => alert('ERROR')
     );
     // this.route.navigateByUrl('/customer/list');
+  }
+
+  searchDiemDen() {
   }
 }

@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {TenNhaXe} from '../list/ten-nha-xe';
-import {LoaiXe} from '../list/loai-xe';
+import {TenNhaXe} from '../model/ten-nha-xe';
+import {LoaiXe} from '../model/loai-xe';
 import {TenNhaXeService} from '../service/ten-nha-xe.service';
 import {LoaiXeService} from '../service/loai-xe.service';
-import {BenXe} from '../list/ben-xe';
+import {BenXe} from '../model/ben-xe';
 import {BenXeService} from '../service/ben-xe.service';
 import {ActivatedRoute, Router} from '@angular/router';
 
@@ -15,14 +15,14 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 export class EditComponent implements OnInit {
   id: string;
-
   tenNhaXe: TenNhaXe[] = [];
   loaiXe: LoaiXe[] = [];
   benXeUpdate: FormGroup;
 
-    compareWithId(item1, item2) {
-      return item1 && item2 && item1.id === item2.id;
-    }
+  compareWithId(item1, item2) {
+    return item1 && item2 && item1.id === item2.id;
+  }
+
   constructor(private tenNhaXeService: TenNhaXeService,
               private loaiXeService: LoaiXeService,
               private benXeService: BenXeService,
@@ -40,7 +40,7 @@ export class EditComponent implements OnInit {
       gioKhoiHanh: new FormControl('', [Validators.required, Validators.min(5)]),
       gioDen: new FormControl('', [Validators.required, Validators.max(23)]),
     });
-    this.getBenXe(this.id);
+
   }
 
   ngOnInit(): void {
@@ -50,6 +50,7 @@ export class EditComponent implements OnInit {
     this.tenNhaXeService.getAllTenNhaXe().subscribe(nhaXe => {
       this.tenNhaXe = nhaXe;
     });
+    this.getBenXe(this.id);
   }
 
   getBenXe(id: string) {

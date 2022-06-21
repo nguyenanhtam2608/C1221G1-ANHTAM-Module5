@@ -61,11 +61,11 @@ export class CustomerCreateComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
-    this.customerTypeService.getAllCustomerType().subscribe(customerTypes => {
-      this.customerTypes = customerTypes;
-    });
-  }
+    ngOnInit(): void {
+      this.customerTypeService.getAllCustomerType().subscribe(customerTypes => {
+        this.customerTypes = customerTypes;
+      });
+    }
 
   // validateId(customers: AbstractControl): ValidationErrors {
   //   let flag = true;

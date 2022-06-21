@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Table(name = "ben_xe")
 public class BenXe {
     @Id
-    private String id;
+    private java.lang.String id;
 
     private String diemDen;
     private String diemDi;

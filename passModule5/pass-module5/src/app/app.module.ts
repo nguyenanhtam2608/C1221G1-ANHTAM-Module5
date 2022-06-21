@@ -24,17 +24,17 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     HeaderComponent,
     FooterComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FormsModule,
-        RouterModule,
-        HttpClientModule,
-        NgxPaginationModule,
-        ReactiveFormsModule,
-        BrowserAnimationsModule,
-        MatPaginatorModule,
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    RouterModule,
+    HttpClientModule,
+    NgxPaginationModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatPaginatorModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

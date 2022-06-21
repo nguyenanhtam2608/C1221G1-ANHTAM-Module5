@@ -4,85 +4,110 @@
       <div class="row">
         <div class="booking-form">
           <div class="form-header">
-            <h1>Create</h1>
           </div>
-          <form  (ngSubmit)="onSubmit()">
+          <form [formGroup]="benXeCreate" (ngSubmit)="onSubmit()">
 
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <span class="form-label">Id Transaction</span>
+                  <span class="form-label">Biển Số Xe</span>
                   <input class="form-control" type="text" formControlName="id"
-                         placeholder="Enter your Id Transaction">
-<!--                  <p style="color: red"-->
-<!--                     *ngIf="transactionCreate.controls.id.hasError('required') && transactionCreate.controls.id.touched">-->
-<!--                    Is-->
-<!--                    not empty</p>-->
-<!--                  <p style="color: red"-->
-<!--                     *ngIf="transactionCreate.controls.id.hasError('pattern') && transactionCreate.controls.id.touched">-->
-<!--                    Format MDV-XXXX</p>-->
+                          placeholder="Enter your Biển Số">
                 </div>
               </div>
 
               <div class="col-sm-6">
                 <div class="form-group">
-                  <span class="form-label">Date </span>
-                  <input class="form-control" type="date" formControlName="date" placeholder="Enter your date ">
-<!--                  <p style="color: red"-->
-<!--                     *ngIf="transactionCreate.controls.date.hasError('required')  && transactionCreate.controls.date.touched">-->
-<!--                    Is not empty</p>-->
-<!--                  <p style="color: red"-->
-<!--                     *ngIf="transactionCreate.controls.date.hasError('er')  && transactionCreate.controls.date.touched">-->
-<!--                    Ngu</p>-->
+                  <span class="form-label">Số Điện thoại </span>
+                  <input class="form-control" type="text" formControlName="soDienThoai"
+                         placeholder="Enter your Số Điện thoại ">
+                  <p style="color: red"
+                     *ngIf="benXeCreate.controls.soDienThoai.hasError('required')  && benXeCreate.controls.soDienThoai.touched">
+                    Không để trống</p>
+                  <p style="color: red"
+                     *ngIf="benXeCreate.controls.soDienThoai.hasError('pattern')  && benXeCreate.controls.soDienThoai.touched">
+                    Định dạng ( 090 | 093 | 097 ) XXXXXXX</p>
+
                 </div>
               </div>
             </div>
 
             <div class="form-group">
-              <span class="form-label">Price</span>
-              <input class="form-control" type="text" formControlName="price" placeholder="Enter price">
-<!--              <p style="color: red"-->
-<!--                 *ngIf="transactionCreate.controls.price.hasError('required')  && transactionCreate.controls.price.touched">-->
-<!--                Is not empty</p>-->
-<!--              <p style="color: red"-->
-<!--                 *ngIf="transactionCreate.controls.price.hasError('min')  && transactionCreate.controls.price.touched">-->
-<!--                MIN is 500000</p>-->
+              <span class="form-label">Điểm Đếm</span>
+              <input class="form-control" type="text" formControlName="diemDen" placeholder="Enter Điểm Đến">
+
 
             </div>
 
 
             <div class="form-group">
-              <span class="form-label">Area</span>
-              <input class="form-control" type="text" formControlName="area" placeholder="Enter area ">
+              <span class="form-label">Điểm Đi</span>
+              <input class="form-control" type="text" formControlName="diemDi" placeholder="Enter Điểm Đi ">
 
-<!--              <p style="color: red"-->
-<!--                 *ngIf="transactionCreate.controls.area.hasError('required')  && transactionCreate.controls.area.touched">-->
-<!--                Is not empty</p>-->
-<!--              <p style="color: red"-->
-<!--                 *ngIf="transactionCreate.controls.area.hasError('min')  && transactionCreate.controls.area.touched">-->
-<!--                MIN is 20</p>-->
+            </div>
 
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <span class="form-label">Email</span>
+                  <input class="form-control" type="text" formControlName="email"
+                         placeholder="Enter your Email">
+                  <p style="color: red"
+                     *ngIf="benXeCreate.controls.email.hasError('required') && benXeCreate.controls.email.touched">
+                    Không để trống</p>
+                  <p style="color: red"
+                     *ngIf="benXeCreate.controls.email.hasError('email') && benXeCreate.controls.email.touched">
+                    Đúng định dạng </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Giờ Khởi hành</span>
+                  <input class="form-control" type="time" formControlName="gioKhoiHanh"
+                         placeholder="Enter your Giờ Khởi hành ">
+                  <p style="color: red"
+                     *ngIf="benXeCreate.controls.gioKhoiHanh.hasError('required')  && benXeCreate.controls.gioKhoiHanh.touched">
+                    Không được để trống</p>
+                  <p style="color: red"
+                     *ngIf="benXeCreate.controls.gioKhoiHanh.hasError('min')  && benXeCreate.controls.gioKhoiHanh.touched">
+                    Bát đầu từ 5 giờ </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Giờ Đến</span>
+                  <input class="form-control" type="time" formControlName="gioDen" placeholder="Enter your Giờ Đến ">
+                  <p style="color: red"
+                     *ngIf="benXeCreate.controls.gioDen.hasError('required')  && benXeCreate.controls.gioDen.touched">
+                    Không được để trống</p>
+                  <p style="color: red"
+                     *ngIf="benXeCreate.controls.gioDen.hasError('max')  && benXeCreate.controls.gioDen.touched">
+                    Kết thúc từ 23 giờ </p>
+                </div>
+              </div>
             </div>
 
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <span class="form-label">Transaction Type</span>
-                  <select class="form-control" formControlName="transactionType">
-                    <option value="">Transaction Type</option>
-<!--                    <option *ngFor="let transactionType of transactionType"-->
-<!--                            [ngValue]="transactionType">{{transactionType.name}}</option>-->
+                  <span class="form-label">Loai Xe</span>
+                  <select class="form-control" formControlName="loaiXe">
+                    <option value="">Loại Xe</option>
+                    <option *ngFor="let loaiXe of loaiXe"
+                            [ngValue]="loaiXe">{{loaiXe.name}}</option>
                   </select>
                   <span class="select-arrow"></span>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <span class="form-label">Customer </span>
-                  <select class="form-control" formControlName="customer">
-                    <option value="">Select Customer</option>
-<!--                    <option *ngFor="let customer of customer"-->
-<!--                            [ngValue]="customer">{{customer.name}}</option>-->
+                  <span class="form-label">Tên Nhà Xe </span>
+                  <select class="form-control" formControlName="tenNhaXe" >
+                    <option value="">Tên Nhà Xe</option>
+                    <option *ngFor="let tenNhaXe of tenNhaXe"
+                            [ngValue]="tenNhaXe">{{tenNhaXe.name}}</option>
 
                   </select>
                   <span class="select-arrow"></span>
@@ -91,7 +116,7 @@
             </div>
 
             <div class="form-btn">
-              <button type="submit" class="submit-btn">Create</button>
+              <button type="submit" class="submit-btn">Update</button>
               <br>
               <button type="submit" class="submit-btn" [routerLink]="['/']">Cancel</button>
             </div>
@@ -102,6 +127,7 @@
     </div>
   </div>
 </div>
+
 
 
 
