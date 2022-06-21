@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
-import {ActivatedRoute, ParamMap} from '@angular/router';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {CustomerService} from '../customer.service';
 import {CustomerTypeService} from '../customer-type.service';
 import {CustomerType} from '../model/customer-type';
@@ -24,7 +24,8 @@ export class CustomerEditComponent implements OnInit {
 
   constructor(private customerService: CustomerService, private customerTypeService: CustomerTypeService
               // tslint:disable-next-line:align
-    , private activatedRoute: ActivatedRoute) {
+    , private activatedRoute: ActivatedRoute,
+              private router: Router) {
     // lay id dang string
     this.id = this.activatedRoute.snapshot.paramMap.get('id');
     console.log(this.id);
@@ -53,9 +54,9 @@ export class CustomerEditComponent implements OnInit {
 
   onSubmit(id: string) {
     const customer = this.customerUpdate.value;
-
     this.customerService.updateCustomer(id, customer).subscribe(() => {
       alert('Thanh Cong');
+      this.router.navigateByUrl('customer/list');
     });
 
   }

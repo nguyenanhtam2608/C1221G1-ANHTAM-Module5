@@ -1,0 +1,27 @@
+{
+  "benXe": [],
+  "loaiXe": [
+    {
+      "id": 1,
+      "name": "Giường nằm"
+    },
+    {
+      "id": 2,
+      "name": "Ghế ngồi"
+    }
+  ],
+  "tenNhaXe": [
+    {
+      "id": 1,
+      "name": "Mai Linh"
+    },
+    {
+      "id": 2,
+      "name": "Hoàng Long"
+    },
+    {
+      "id": 3,
+      "name": "Phương Trang"
+    }
+  ]
+}

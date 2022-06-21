@@ -1,0 +1,84 @@
+<div class="container-xl">
+  <div>
+    <div class="table-wrapper">
+      <div class="table-title">
+        <div class="row">
+          <div class="col-sm-8"><h2>Customer <b>Details</b></h2></div>
+
+
+
+
+
+        </div>
+      </div>
+      <table class="table table-striped table-hover table-bordered">
+        <thead>
+        <tr>
+          <th>Số Xe</th>
+          <th>Loại xe</th>
+          <th>Tên Nhà Xe</th>
+          <th>Điếm đi</th>
+          <th>Điểm đến</th>
+          <th>Số điện thoại</th>
+          <th>Email</th>
+          <th>Giờ đi</th>
+          <th>Giờ đến</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor=" let benXe of benXe ">
+          <td>{{benXe.id}}</td>
+          <td>{{benXe.loaiXe.name}}</td>
+          <td>{{benXe.tenNhaXe.name}}</td>
+          <td>{{benXe.diemDi}}</td>
+          <td>{{benXe.diemDen}}</td>
+          <td>{{benXe.soDienThoai}}</td>
+          <td>{{benXe.email}}</td>
+          <td>{{benXe.gioKhoiHanh}}</td>
+          <td>{{benXe.gioDen}}</td>
+
+          <td>
+            <a [routerLink]="['/edit',benXe.id]" class="edit" title="Edit" data-toggle="tooltip"><i
+              class="material-icons">&#xE254;</i></a>
+
+            <button type="button" class="btn btn-danger btn-sm"
+                    (click)="showDeleteModal(benXe.id,benXe.tenNhaXe.name)"
+                    data-toggle="modal" data-target="#exampleModal">
+              <i class="material-icons">&#xE872;</i>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <div>
+        <mat-paginator [pageSizeOptions]="[2, 4, 6, 8]" [pageSize]="2" [length]="totalElements" (page)="nextPage($event)"> </mat-paginator>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" name="id" id="idCustomerDel">
+        <span>Bạn đồng ý xóa thông tin của xe có biển số xe {{id}}</span>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+        <input type="submit" (click)="deleteBenXe(id)" data-dismiss="modal" class="btn btn-danger"
+               value="Delete">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

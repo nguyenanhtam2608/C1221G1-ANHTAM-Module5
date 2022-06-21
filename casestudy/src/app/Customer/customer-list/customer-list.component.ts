@@ -26,7 +26,6 @@ export class CustomerListComponent implements OnInit {
       });
     console.log(this.customer);
   }
-
   //
   // getAll() {
   //   this.customerService.getAll().subscribe(customer => this.customer = customer);
@@ -42,6 +41,7 @@ export class CustomerListComponent implements OnInit {
         this.ngOnInit();
       }, error => alert('ERROR')
     );
+    // this.route.navigateByUrl('/customer/list');
   }
 
   searchCustomerName() {

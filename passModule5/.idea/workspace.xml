@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a070aa33-f577-46cb-ad11-f0c05a1279e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/passModule5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/create/create.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/create/create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/create/create.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/create/create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/edit/edit.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/edit/edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/edit/edit.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/edit/edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/footer/footer.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/footer/footer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/footer/footer.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/footer/footer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/header/header.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/header/header.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/list/list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/list/list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/list/list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/list/list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/app/service/chinh.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/create/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/create/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/create/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/gijgo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/main.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/slicknav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/css/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/ElegantIcons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/ElegantIcons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/ElegantIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/ElegantIcons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/gijgo-material.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/gijgo-material.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/gijgo-material.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/gijgo-material.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/about/about_lft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/about/about_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/about/pet_care.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/adapt_icon/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/adapt_icon/1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/adapt_icon/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/adapt_icon/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/banner/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/banner/bradcam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/banner/contact_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/banner/dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/banner/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/blog_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/blog_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/blog_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/blog_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/learn_about_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/single_blog_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/single_blog_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/single_blog_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/single_blog_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/single_blog_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/blog/slide_thumb_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/comment/comment_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/comment/comment_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/comment/comment_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/customer/customar1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/customer/customar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/customer/customar_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/customer/cutomer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/dining/dining-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/dining/dining-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/dining/dining-img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/dining/dining-img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/a2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/disabled-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/disabled-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/f5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/g7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/g8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/primary-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/primary-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/success-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/elements/success-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/gallery/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/gallery/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/gallery/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/gallery/gallery1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/gallery/gallery2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/gallery/gallery3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/gallery/video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/hero/aboutpage_hero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/hero/contact_hero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/hero/footer_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/hero/h1_hero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/hero/roomspage_hero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/hero/servicespage_hero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/logo/date-picker-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/logo/form-iocn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/logo/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/logo/logo2_footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/logo/logof.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/logo/select-items-icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/logo/testimonial.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/offers/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/offers/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/offers/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/our_blog/blog-comments-icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/our_blog/blog-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/our_blog/blog-img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/our_blog/blog-img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/post_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/post/preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/prising/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/rooms/room1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/rooms/room2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/rooms/room3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/rooms/room4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/rooms/room5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/rooms/room6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/service/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/service/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/service/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/service/service_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/service/service_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/service/service_icon_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/service/service_icon_bg_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/team/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/team/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/team/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/img/testmonial/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/animated.headline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/gijgo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/jquery.ajaxchimp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/jquery.nice-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/jquery.paroller.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/jquery.scrollUp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/jquery.slicknav.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/jquery.sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/mail-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/one-page-nav-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/slicknav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/vendor/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/vendor/modernizr-3.5.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_blog_page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_booking.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_bradcam.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_customer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_dining.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_elements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_extend.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_gallery.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_h1-hero.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_headerMenu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_overlay.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_room.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_testimonial.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/assets/scss/services.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass-module5/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/.idea/case.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/default-skin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/icomoon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/jquery.fancybox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/jquery.mCustomScrollbar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/meanmenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/nice-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/IcoMoon-Free.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/Poppins-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/contract/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/contract/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/customer/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/customer/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/customer/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/employee/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/employee/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/employee/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/room.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/script.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/service/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/furama/service/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/FURAMA (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/banner3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/blog1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/blog2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/blog3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/blog_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/date.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/gallery1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/gallery2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/gallery3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/gallery4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/gallery5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/gallery6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/gallery7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/gallery8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/logof.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/menu_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/room1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/room2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/room3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/room4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/room5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/images/room6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/jquery-3.0.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/jquery.mCustomScrollbar.concat.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/modernizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/assets/coloredbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/assets/gridtile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/assets/gridtile_3x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/assets/gridtile_3x3_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/assets/gridtile_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/assets/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/css/closedhand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/css/layers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/css/navigation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/css/openhand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/css/settings.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-strokebb1d.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroked41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/revicons/revicons90c6.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/revicons/revicons90c6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/revicons/revicons90c6.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/fonts/revicons/revicons90c6.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/extensions/revolution.extension.actions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/extensions/revolution.extension.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/extensions/revolution.extension.kenburn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/extensions/revolution.extension.layeranimation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/extensions/revolution.extension.migration.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/extensions/revolution.extension.navigation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/extensions/revolution.extension.parallax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/extensions/revolution.extension.slideanims.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/extensions/revolution.extension.video.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/jquery.themepunch.revolution.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/revolution/js/jquery.themepunch.tools.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/js/slider-setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case/keto-1.0.0/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-create/customer-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-create/customer-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-edit/customer-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-edit/customer-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-edit/customer-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-list/customer-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer-list/customer-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer/customer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/Customer/customer/customer.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2AnjonL0uqQ916TUUm7Ud7eSqnX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pass-module5/src/assets/img/logo" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="ts.external.directory.path" value="D:\hoc_tap\Ws\module5_angular\passModule5\pass-module5\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\hoc_tap\Ws\module5_angular\passModule5\pass-module5\src\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hoc_tap\Ws\module5_angular\passModule5\pass-module5\src\assets\img\logo" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a070aa33-f577-46cb-ad11-f0c05a1279e3" name="Default Changelist" comment="" />
+      <created>1655652420554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655652420554</updated>
+      <workItem from="1655652421724" duration="156000" />
+      <workItem from="1655690138308" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="106" key="FileChooserDialogImpl" timestamp="1655652572604">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="499" y="106" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1655652572604" />
+  </component>
+</project>

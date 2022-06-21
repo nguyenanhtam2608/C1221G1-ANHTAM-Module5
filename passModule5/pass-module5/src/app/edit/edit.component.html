@@ -1,0 +1,133 @@
+<div id="booking" class="section">
+  <div class="section-center">
+    <div class="container">
+      <div class="row">
+        <div class="booking-form">
+          <div class="form-header">
+          </div>
+          <form [formGroup]="benXeUpdate" (ngSubmit)="onSubmit(id)">
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Biển Số Xe</span>
+                  <input class="form-control" type="text" formControlName="id"
+                         disabled placeholder="Enter your Biển Số">
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Số Điện thoại </span>
+                  <input class="form-control" type="text" formControlName="soDienThoai"
+                         placeholder="Enter your Số Điện thoại ">
+                  <p style="color: red"
+                     *ngIf="benXeUpdate.controls.soDienThoai.hasError('required')  && benXeUpdate.controls.soDienThoai.touched">
+                    Không để trống</p>
+                  <p style="color: red"
+                     *ngIf="benXeUpdate.controls.soDienThoai.hasError('pattern')  && benXeUpdate.controls.soDienThoai.touched">
+                    Định dạng ( 090 | 093 | 097 ) XXXXXXX</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <span class="form-label">Điểm Đếm</span>
+              <input class="form-control" type="text" formControlName="diemDen" placeholder="Enter Điểm Đến">
+
+
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Điểm Đi</span>
+              <input class="form-control" type="text" formControlName="diemDi" placeholder="Enter Điểm Đi ">
+
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <span class="form-label">Email</span>
+                  <input class="form-control" type="text" formControlName="email"
+                         placeholder="Enter your Email">
+                  <p style="color: red"
+                     *ngIf="benXeUpdate.controls.email.hasError('required') && benXeUpdate.controls.email.touched">
+                    Không để trống</p>
+                  <p style="color: red"
+                     *ngIf="benXeUpdate.controls.email.hasError('email') && benXeUpdate.controls.email.touched">
+                    Đúng định dạng </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Giờ Khởi hành</span>
+                  <input class="form-control" type="time" formControlName="gioKhoiHanh"
+                         placeholder="Enter your Giờ Khởi hành ">
+                  <p style="color: red"
+                     *ngIf="benXeUpdate.controls.gioKhoiHanh.hasError('required')  && benXeUpdate.controls.gioKhoiHanh.touched">
+                    Không được để trống</p>
+                  <p style="color: red"
+                     *ngIf="benXeUpdate.controls.gioKhoiHanh.hasError('min')  && benXeUpdate.controls.gioKhoiHanh.touched">
+                    Bát đầu từ 5 giờ </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Giờ Đến</span>
+                  <input class="form-control" type="time" formControlName="gioDen" placeholder="Enter your Giờ Đến ">
+                  <p style="color: red"
+                     *ngIf="benXeUpdate.controls.gioDen.hasError('required')  && benXeUpdate.controls.gioDen.touched">
+                    Không được để trống</p>
+                  <p style="color: red"
+                     *ngIf="benXeUpdate.controls.gioDen.hasError('max')  && benXeUpdate.controls.gioDen.touched">
+                    Kết thúc từ 23 giờ </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Loai Xe</span>
+                  <select class="form-control" formControlName="loaiXe" [compareWith]="compareWithId">
+                    <option value="">Loại Xe</option>
+                    <option *ngFor="let loaiXe of loaiXe"
+                            [ngValue]="loaiXe">{{loaiXe.name}}</option>
+                  </select>
+                  <span class="select-arrow"></span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Tên Nhà Xe </span>
+                  <select class="form-control" formControlName="tenNhaXe" [compareWith]="compareWithId">
+                    <option value="">Tên Nhà Xe</option>
+                    <option *ngFor="let tenNhaXe of tenNhaXe"
+                            [ngValue]="tenNhaXe">{{tenNhaXe.name}}</option>
+
+                  </select>
+                  <span class="select-arrow"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-btn">
+              <button type="submit" class="submit-btn">Update</button>
+              <br>
+              <button type="submit" class="submit-btn" [routerLink]="['/']">Cancel</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

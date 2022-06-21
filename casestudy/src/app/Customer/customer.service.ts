@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
 import {Customer} from './model/customer';
-import {Observable} from 'rxjs';
+import {Observable, of} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 
-import {map} from 'rxjs/operators';
+import {delay, map} from 'rxjs/operators';
 
 // const API_URL = `${environment.apiUrl}`;
 @Injectable({
@@ -134,7 +134,7 @@ export class CustomerService {
   }
 
   updateCustomer(id: string, customer: Customer): Observable<Customer> {
-    return this.http.put<Customer>(`${'http://localhost:3000'}/customer'${id}`, customer);
+    return this.http.put<Customer>(`${'http://localhost:3000/customer'}/${id}`, customer);
   }
 
   deleteCustomer(id: string): Observable<Customer> {
@@ -144,6 +144,12 @@ export class CustomerService {
   searchCustomerName(name: string): Observable<Customer[]> {
     return this.http.get<Customer[]>(`${'http://localhost:3000'}/customer?name_like=${name}`);
   }
-
+  //
+  // checkIfIdExists(value: string) {
+  //   // @ts-ignore
+  //   return of(this.customerArray.some((a) => a === value)).pipe(
+  //     delay(1000)
+  //   );
+  // }
 }
 

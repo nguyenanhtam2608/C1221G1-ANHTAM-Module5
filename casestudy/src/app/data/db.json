@@ -3,15 +3,15 @@
     {
       "id": "KH-1345",
       "name": "Nat",
-      "dayOfBirth": "2022-06-14",
+      "dayOfBirth": "2022-06-04",
       "gender": "1",
-      "nationalId": "123456789",
-      "phone": "0903709673",
+      "nationalId": "123456788",
+      "phone": "0903709677",
       "mail": "nguyenanhtam12344321@gmail.com",
       "address": "điện thọ",
       "customerType": {
-        "id": "5",
-        "name": "Member"
+        "id": "1",
+        "name": "Diamond"
       },
       "salary": "123123"
     },
@@ -59,6 +59,21 @@
         "id": "4",
         "name": "Silver"
       }
+    },
+    {
+      "id": "KH-2606",
+      "name": "tâm nguyễn",
+      "dayOfBirth": "2022-06-03",
+      "gender": "1",
+      "nationalId": "123456789",
+      "phone": "0903709673",
+      "mail": "nguyenanhtam12344321@gmail.com",
+      "address": "điện thọ",
+      "customerType": {
+        "id": "5",
+        "name": "Member"
+      },
+      "salary": "134"
     }
   ],
   "customerType": [
