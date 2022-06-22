@@ -1,16 +1,14 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {BenXe} from '../model/ben-xe';
 import {BenXeService} from '../service/ben-xe.service';
-import {TenNhaXeService} from '../service/ten-nha-xe.service';
-import {LoaiXeService} from '../service/loai-xe.service';
-import {Router} from '@angular/router';
+
 import {PageEvent} from '@angular/material/paginator';
 
 
 @Component({
   selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  templateUrl: './list.component.html'
+
 })
 export class ListComponent implements OnInit {
   benXe: BenXe[] = [];
@@ -19,17 +17,18 @@ export class ListComponent implements OnInit {
   tenNhaXe: string;
   totalElements: number = 0;
 
+  @ViewChild('nameSearch') nameSearch: ElementRef;
 
   constructor(private benXeService: BenXeService) {
   }
 
   ngOnInit(): void {
-    this.getBenXe({page: '0', size: '2'});
+    this.getBenXe({page: '0', size: '2', diemDen: ''});
 
   }
 
   private getBenXe(request) {
-    this.benXeService.getAll(request).subscribe(
+    this.benXeService.searchBenXeDiemDen(request).subscribe(
       benXe => {
         console.log(benXe);
         this.benXe = benXe['content'];
@@ -42,7 +41,7 @@ export class ListComponent implements OnInit {
     );
   }
 
-  nextPage(event: PageEvent) {
+  private nextPage(event: PageEvent) {
     const request = {
       page: undefined,
       size: undefined
@@ -67,5 +66,11 @@ export class ListComponent implements OnInit {
   }
 
   searchDiemDen() {
+    console.log(this.nameSearch.nativeElement.value);
+    this.benXeService.searchBenXeDiemDen({page: 0, size: 5, diemDen: this.nameSearch.nativeElement.value}).subscribe(benXe => {
+        // @ts-ignore
+        this.benXe = benXe.content;
+      }
+    );
   }
 }

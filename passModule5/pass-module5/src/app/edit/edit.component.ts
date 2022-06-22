@@ -62,8 +62,12 @@ export class EditComponent implements OnInit {
   onSubmit(id: string) {
     const benXe = this.benXeUpdate.value;
     this.benXeService.updateBenXe(id, benXe).subscribe(() => {
-      alert('Thanh Cong');
-      this.router.navigateByUrl('');
-    });
+        alert('Thanh Cong');
+        this.router.navigateByUrl('');
+      },
+      error => {
+        alert('Chưa update được');
+        this.router.navigateByUrl('');
+      });
   }
 }

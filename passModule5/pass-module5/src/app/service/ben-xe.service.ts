@@ -24,15 +24,20 @@ export class BenXeService {
   }
 
   findById(id: string): Observable<BenXe> {
-    return this.http.get<BenXe>(`${'http://localhost:8080/find'}${id}`);
+    return this.http.get<BenXe>(`${'http://localhost:8080/find'}/${id}`);
   }
 
   updateBenXe(id: string, benXe: BenXe): Observable<BenXe> {
-    return this.http.put<BenXe>(`${'http://localhost:8080/edit'}/${id}`, benXe);
+    return this.http.patch<BenXe>(`${'http://localhost:8080/update'}/${id}`, benXe);
   }
 
   deleteBenXe(id: string): Observable<BenXe> {
     return this.http.delete<BenXe>(`${'http://localhost:8080/delete'}/${id}`);
+  }
+
+  searchBenXeDiemDen(request): Observable<BenXe[]> {
+    const params = request;
+    return this.http.get<BenXe[]>(`http://localhost:8080/list`, {params});
   }
 }
 
