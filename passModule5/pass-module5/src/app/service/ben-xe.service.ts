@@ -37,7 +37,8 @@ export class BenXeService {
 
   searchBenXeDiemDen(request): Observable<BenXe[]> {
     const params = request;
-    return this.http.get<BenXe[]>(`http://localhost:8080/list`, {params});
+    return this.http.get<BenXe[]>('http://localhost:8080/list', {params});
+
   }
 }
 

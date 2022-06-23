@@ -21,10 +21,11 @@ public class BenXeService implements IBenXeService {
         return iBenXeRepository.findAll(pageable);
     }
 
-//    @Override
-//    public Page<BenXe> findAllandSearch(Pageable diemDen, Pageable pageable) {
-//        return iBenXeRepository.findAllByDiemDen(diemDen, pageable);
-//    }
+
+    @Override
+    public Page<BenXe> findAllandSearch(String diemDen, Pageable pageable) {
+        return iBenXeRepository.findAllByDiemDenContaining(diemDen, pageable);
+    }
 
     @Override
     public void save(BenXe benXe) {

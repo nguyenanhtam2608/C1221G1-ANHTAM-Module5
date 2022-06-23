@@ -10,8 +10,7 @@ import java.util.Optional;
 public interface IBenXeService {
     Page<BenXe> findAll(Pageable pageable);
 
-//    Page<BenXe> findAllandSearch(Pageable diemDen, Pageable pageable);
-
+    Page<BenXe> findAllandSearch(String diemDen, Pageable pageable);
 
     void save(BenXe benXe);
 

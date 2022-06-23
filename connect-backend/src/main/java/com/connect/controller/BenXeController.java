@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin
+//@CrossOrigin("http://localhost:4200")
 public class BenXeController {
     @Autowired
     private IBenXeService iBenXeService;
@@ -30,11 +30,12 @@ public class BenXeController {
     @GetMapping(value = "/list")
     public ResponseEntity<Page<BenXe>> getList(@RequestParam Optional<String> sort,
                                                @RequestParam(defaultValue = "0") int page,
-                                               @RequestParam(defaultValue = "2") int size
+                                               @RequestParam(defaultValue = "2") int size,
+                                               @RequestParam("diemDen") Optional<String> diemDen
     ) {
-
+        String diemDenn = diemDen.orElse("");
         Pageable paging = PageRequest.of(page, size);
-        Page<BenXe> benXePage = this.iBenXeService.findAll(paging);
+        Page<BenXe> benXePage = this.iBenXeService.findAllandSearch(diemDenn, paging);
 
         if (!benXePage.hasContent()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -49,15 +50,21 @@ public class BenXeController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @PatchMapping(value = "/update/{id}")
+    public ResponseEntity<BenXe> update(@RequestBody BenXe benXe, @PathVariable String id) {
+        this.iBenXeService.save(benXe);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
     @GetMapping(value = "/find/{id}")
-    public ResponseEntity<BenXe> findBenXeById(@PathVariable String id){
+    public ResponseEntity<BenXe> findBenXeById(@PathVariable String id) {
         BenXe benXe = this.iBenXeService.findBenXeById(id);
 
-        if(benXe == null){
+        if (benXe == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(benXe,HttpStatus.OK);
+        return new ResponseEntity<>(benXe, HttpStatus.OK);
     }
 
     @DeleteMapping("delete/{id}")

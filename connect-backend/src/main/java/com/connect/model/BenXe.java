@@ -8,10 +8,10 @@ import javax.persistence.*;
 public class BenXe {
     @Id
     private java.lang.String id;
-
     private String diemDen;
     private String diemDi;
     private String soDienThoai;
+    private String avatar;
     private String email;
     @Column(columnDefinition = "TIME")
     private String gioKhoiHanh;
@@ -100,5 +100,13 @@ public class BenXe {
 
     public void setLoaiXe(LoaiXe loaiXe) {
         this.loaiXe = loaiXe;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }
