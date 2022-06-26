@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {LoaiXe} from '../model/loai-xe';
 import {TenNhaXe} from '../model/ten-nha-xe';
 import {LoaiXeService} from '../service/loai-xe.service';
@@ -7,6 +7,11 @@ import {BenXeService} from '../service/ben-xe.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {BenXe} from '../model/ben-xe';
+import {$EOF} from 'codelyzer/angular/styles/chars';
+import validate = WebAssembly.validate;
+import {AngularFireStorage} from '@angular/fire/storage';
+import {formatDate} from '@angular/common';
+import {finalize} from 'rxjs/operators';
 
 @Component({
   selector: 'app-create',
@@ -18,13 +23,13 @@ export class CreateComponent implements OnInit {
   benXe: BenXe[] = [];
   tenNhaXe: TenNhaXe [] = [];
   loaiXe: LoaiXe [] = [];
-
+  selectedImage: any = null;
 
   constructor(private benXeService: BenXeService,
               private tenNhaXeService: TenNhaXeService,
               private loaiXeService: LoaiXeService,
-              private router: Router) {
-
+              private router: Router,
+              @Inject(AngularFireStorage) private storage: AngularFireStorage) {
     this.benXeCreate = new FormGroup({
       id: new FormControl(''),
       loaiXe: new FormControl('', [Validators.required]),
@@ -35,6 +40,7 @@ export class CreateComponent implements OnInit {
       email: new FormControl('', [Validators.email, Validators.required]),
       gioKhoiHanh: new FormControl('', [Validators.required, Validators.min(5)]),
       gioDen: new FormControl('', [Validators.required, Validators.max(23)]),
+      avatar: new FormControl('')
     });
 
   }
@@ -48,20 +54,46 @@ export class CreateComponent implements OnInit {
     });
   }
 
+  showPreview(event: any) {
+    this.selectedImage = event.target.files[0];
+  }
+
 
   onSubmit() {
-    const benXe = this.benXeCreate.value;
-    console.log(benXe);
-    this.benXeService.saveBenXe(benXe).subscribe(() => {
-      alert('Tạo thành công ');
-      this.router.navigateByUrl('/');
-      // tslint:disable-next-line:only-arrow-functions
-      // setTimeout(function() {
-      //     alert('Tạo thành công');
-      //   }, 3000
-      // );
-      this.benXeCreate.reset();
-    });
+    // tslint:disable-next-line:prefer-const
+    let benXe = this.benXeCreate.value;
+    const nameImg = this.getCurrentDateTime() + this.selectedImage.name;
+    const fileRef = this.storage.ref(nameImg);
+    this.storage.upload(nameImg, this.selectedImage).snapshotChanges().pipe(finalize(() => {
+      fileRef.getDownloadURL().subscribe(url => {
 
+        this.benXeCreate.patchValue(benXe.avatar = url);
+
+        // Call API to create benxe
+        this.benXeService.saveBenXe(benXe).subscribe(() => {
+          alert('Tạo thành công ');
+          this.router.navigateByUrl('/');
+        });
+      });
+    })).subscribe();
   }
+
+  // console.log(benXe);
+  // this.benXeService.saveBenXe(benXe).subscribe(() => {
+  //   alert('Tạo thành công ');
+  //   this.router.navigateByUrl('/');
+  //   // tslint:disable-next-line:only-arrow-functions
+  //   // setTimeout(function() {
+  //   //     alert('Tạo thành công');
+  //   //   }, 3000
+  //   // );
+  //
+  //   this.benXeCreate.reset();
+  // });
+
+
+  getCurrentDateTime(): string {
+    return formatDate(new Date(), 'dd-MM-yyyyhhmmssa', 'en-US');
+  }
+
 }

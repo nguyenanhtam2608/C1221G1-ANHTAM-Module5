@@ -5,7 +5,6 @@ import {BenXeService} from '../service/ben-xe.service';
 import {PageEvent} from '@angular/material/paginator';
 
 
-// @ts-ignore
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -17,6 +16,8 @@ export class ListComponent implements OnInit {
   id: string;
   tenNhaXe: string;
   totalElements: number = 0;
+  sizeImageW: number;
+  sizeImageH: number;
 
   @ViewChild('nameSearch') nameSearch: ElementRef;
 
@@ -45,7 +46,7 @@ export class ListComponent implements OnInit {
   private nextPage(event: PageEvent) {
     const request = {
       page: undefined,
-      size: undefined
+      size: undefined,
     };
     request.page = event.pageIndex.toString();
     request.size = event.pageSize.toString();
@@ -76,4 +77,7 @@ export class ListComponent implements OnInit {
     );
 
   }
+
+
+
 }

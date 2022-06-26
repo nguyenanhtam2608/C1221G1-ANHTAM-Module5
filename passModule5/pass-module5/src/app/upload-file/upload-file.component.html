@@ -1,0 +1,14 @@
+<div>
+  <input type="file" (change)="onfileChange($event)"><br>
+  <!-- Khi nao thuc hien upload thi button nay moi hien, con co URL tuc upload thanh cong thi button nay an di-->
+  <button *ngIf="downloadURL?!selectedFile:selectedFile" mat-stroked-button color="accent"
+          class="mat-button-toggle-group btn btn-outline-danger" (click)="onUpload()">Up Avatarl</button>
+<!--  <mat-spinner *ngIf="checkUploadAvatar"></mat-spinner>-->
+<!--  <div class="row">-->
+<!--    <div class="column" *ngFor="let song of listIMG; let a = index">-->
+<!--      <div class="card">-->
+<!--        <img class="img" [src]="myMap.get(a)">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+</div>

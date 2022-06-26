@@ -104,7 +104,7 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <span class="form-label">Tên Nhà Xe </span>
-                  <select class="form-control" formControlName="tenNhaXe" >
+                  <select class="form-control" formControlName="tenNhaXe">
                     <option value="">Tên Nhà Xe</option>
                     <option *ngFor="let tenNhaXe of tenNhaXe"
                             [ngValue]="tenNhaXe">{{tenNhaXe.name}}</option>
@@ -114,19 +114,37 @@
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="file" class="form-control" (change)="showPreview($event)"
+                       accept="image/*" value="" required="required">
 
-            <div class="form-btn">
-              <button type="submit" class="submit-btn">Update</button>
-              <br>
-              <button type="submit" class="submit-btn" [routerLink]="['/']">Cancel</button>
+                <p style="color: red" [hidden]="benXeCreate.valid && benXeCreate.valid">File to be uploaded is
+                  required</p>
+
+              <!--                                                <p style="color: red"-->
+              <!--                                                   *ngIf="benXeCreate.controls.avatar.hasError('required')  && benXeCreate.controls.avatar.touched">-->
+              <!--                                                  Không được để trống</p>-->
+              <!--                                                <p style="color: red"-->
+              <!--                                                   *ngIf="benXeCreate.controls.avatar.hasError('pattern')  && benXeCreate.controls.avatar.touched">-->
+              <!--                                                  Không phải file ảnh  </p>-->
             </div>
-          </form>
 
         </div>
+        <div class="form-btn">
+          <button type="submit" class="submit-btn">Update</button>
+          <br>
+          <button type="submit" class="submit-btn" [routerLink]="['/']">Cancel</button>
+        </div>
+        </form>
+
       </div>
     </div>
   </div>
 </div>
+</div>
+
+
 
 
 

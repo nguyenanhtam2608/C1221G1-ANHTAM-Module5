@@ -1,4 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
+
 import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -14,13 +15,15 @@ import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {AngularFireStorageModule} from '@angular/fire/storage';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment.prod';
+import {UploadFileComponent} from './upload-file/upload-file.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
-
-
-
-// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     CreateComponent,
     EditComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    UploadFileComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,10 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatPaginatorModule,
-
+    AngularFireStorageModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    MatProgressSpinnerModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

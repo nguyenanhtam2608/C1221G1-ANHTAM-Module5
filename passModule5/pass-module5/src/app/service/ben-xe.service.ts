@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {BenXe} from '../model/ben-xe';
 import {environment} from '../../environments/environment';
@@ -13,14 +13,20 @@ export class BenXeService {
   constructor(private  http: HttpClient) {
   }
 
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    })
+  };
 
   getAll(request: any): Observable<BenXe[]> {
     const params = request;
     return this.http.get<BenXe[]>('http://localhost:8080/list', {params});
   }
 
-  saveBenXe(benXe): Observable<BenXe> {
-    return this.http.post<BenXe>('http://localhost:8080/create', benXe);
+  saveBenXe(benXe: BenXe): Observable<BenXe> {
+    // @ts-ignore
+    return this.http.post<BenXe>('http://localhost:8080/create', benXe, this.httpOptions);
   }
 
   findById(id: string): Observable<BenXe> {

@@ -29,6 +29,7 @@
           <th>Tên Nhà Xe</th>
           <th>Điếm đi</th>
           <th>Điểm đến</th>
+          <th>Avatar</th>
           <th>Số điện thoại</th>
           <th>Email</th>
           <th>Giờ đi</th>
@@ -43,13 +44,15 @@
           <td>{{benXe.tenNhaXe.name}}</td>
           <td>{{benXe.diemDi}}</td>
           <td>{{benXe.diemDen}}</td>
+          <td><img src="{{benXe.avatar}}" id="avatar" style="width: 50px;height: 50px" ></td>
           <td>{{benXe.soDienThoai}}</td>
           <td>{{benXe.email}}</td>
           <td>{{benXe.gioKhoiHanh}}</td>
           <td>{{benXe.gioDen}}</td>
 
+
           <td>
-            <a [routerLink]="['/edit',benXe.id]" class="edit" title="Edit" data-toggle="tooltip"><i
+            <a [routerLink]=" ['/edit',benXe.id]" class="edit" title="Edit" data-toggle="tooltip"><i
               class="material-icons">&#xE254;</i></a>
 
             <button type="button" class="btn btn-danger btn-sm"
@@ -91,6 +94,8 @@
     </div>
   </div>
 </div>
+
+
 
 
 

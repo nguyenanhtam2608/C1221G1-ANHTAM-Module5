@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {TenNhaXe} from '../model/ten-nha-xe';
 import {LoaiXe} from '../model/loai-xe';
@@ -7,6 +7,9 @@ import {LoaiXeService} from '../service/loai-xe.service';
 import {BenXe} from '../model/ben-xe';
 import {BenXeService} from '../service/ben-xe.service';
 import {ActivatedRoute, Router} from '@angular/router';
+import {AngularFireStorage} from '@angular/fire/storage';
+import {formatDate} from '@angular/common';
+import {finalize} from 'rxjs/operators';
 
 @Component({
   selector: 'app-edit',
@@ -18,6 +21,7 @@ export class EditComponent implements OnInit {
   tenNhaXe: TenNhaXe[] = [];
   loaiXe: LoaiXe[] = [];
   benXeUpdate: FormGroup;
+  selectedImage: any = null;
 
   compareWithId(item1, item2) {
     return item1 && item2 && item1.id === item2.id;
@@ -27,7 +31,8 @@ export class EditComponent implements OnInit {
               private loaiXeService: LoaiXeService,
               private benXeService: BenXeService,
               private activatedRoute: ActivatedRoute,
-              private router: Router) {
+              private router: Router,
+              @Inject(AngularFireStorage) private storage: AngularFireStorage) {
     this.id = this.activatedRoute.snapshot.paramMap.get('id');
     this.benXeUpdate = new FormGroup({
       id: new FormControl(''),
@@ -39,6 +44,7 @@ export class EditComponent implements OnInit {
       email: new FormControl('', [Validators.email, Validators.required]),
       gioKhoiHanh: new FormControl('', [Validators.required, Validators.min(5)]),
       gioDen: new FormControl('', [Validators.required, Validators.max(23)]),
+      avatar: new FormControl('')
     });
 
   }
@@ -60,14 +66,36 @@ export class EditComponent implements OnInit {
   }
 
   onSubmit(id: string) {
+
+
     const benXe = this.benXeUpdate.value;
-    this.benXeService.updateBenXe(id, benXe).subscribe(() => {
-        alert('Thanh Cong');
-        this.router.navigateByUrl('');
-      },
-      error => {
-        alert('Chưa update được');
-        this.router.navigateByUrl('');
+    const nameImg = this.getCurrentDateTime() + this.selectedImage.name;
+    const fileRef = this.storage.ref(nameImg);
+    this.storage.upload(nameImg, this.selectedImage).snapshotChanges().pipe(finalize(() => {
+      fileRef.getDownloadURL().subscribe(url => {
+
+        this.benXeUpdate.patchValue(benXe.avatar = url);
+
+        this.benXeService.updateBenXe(id, benXe).subscribe(() => {
+            alert('Thanh Cong');
+            this.router.navigateByUrl('');
+          },
+          error => {
+            alert('Chưa update được');
+            this.router.navigateByUrl('');
+          });
+
       });
+    })).subscribe();
+  }
+
+
+  getCurrentDateTime(): string {
+    return formatDate(new Date(), 'dd-MM-yyyyhhmmssa', 'en-US');
+  }
+
+
+  showPreview(event: any) {
+    this.selectedImage = event.target.files[0];
   }
 }

@@ -109,4 +109,5 @@ public class BenXe {
     public void setAvatar(String avatar) {
         this.avatar = avatar;
     }
+
 }
